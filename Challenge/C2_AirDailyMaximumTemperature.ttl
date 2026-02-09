@@ -27,7 +27,7 @@ ex:C2
         ] ,
         [ a iop:Constraint ;
              rdfs:label "location: 1.7 m  above ground" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q7391292> ;
+             iop:constrains <https://www.wikidata.org/entity/Q7391292> ;
         ] .
 
 <https://www.wikidata.org/entity/Q7391292>

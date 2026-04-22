@@ -11,7 +11,7 @@
     rdfs:label 
         "Pluvial flood due to 100 year event" ;
     rdfs:comment 
-        """Pluvial flood due to 100 year event expressed as water depth caused by rainfall of 36 mm/h in a statistical unit, defined by a grouping of homogeneous neighboring building blocks""" ;
+        """Pluvial flood expressed as water depth due to 100 year event in a statistical unit, defined by a grouping of homogeneous neighboring building blocks""" ;
     ex:issue
         "https://github.com/mabablue/I-ADOPT-examples-playground/issues/97" ;
     iop:hasObjectOfInterest 
@@ -26,7 +26,7 @@
              iop:constrains <https://www.wikidata.org/entity/Q3409269> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "due to: 36 mm/h rainfall" ;
+             rdfs:label "due to: 100 year rain event" ;
              iop:constrains <https://www.wikidata.org/entity/Q283> ;
         ] .
 

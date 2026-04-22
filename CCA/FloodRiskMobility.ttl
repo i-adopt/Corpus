@@ -4,28 +4,27 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 
 ex:FloodRiskMobility
     a 
         iop:Variable ;
     rdfs:label 
         "Flood risk index related to mobility and accessibility " ;
-    skos:definition 
-        """Flood risk index related to mobility and accessibility when streets around the houses are flooded""" ;
     rdfs:comment 
         """Flood risk index related to mobility and accessibility when streets around the houses are flooded""" ;
-    ex:issue 
-     "https://github.com/mabablue/I-ADOPT-examples-playground/issues/98" ;
     iop:hasObjectOfInterest 
-        _:b0 ;
+        <https://www.wikidata.org/entity/Q2288778> ;
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q3409269> ;
     iop:hasProperty 
-        _:b1 ;
+        <https://www.wikidata.org/entity/Q1738991> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "condition: streets around the houses are flooded" ;
-             iop:constrains _:b0 ;
+             iop:constrains <https://www.wikidata.org/entity/Q2288778> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "defined by: grouping of homogeneous neighboring building blocks" ;
@@ -33,10 +32,10 @@ ex:FloodRiskMobility
         ] ,
         [ a iop:Constraint ;
              rdfs:label "type: mobility and accessibility" ;
-             iop:constrains _:b0 ;
+             iop:constrains <https://www.wikidata.org/entity/Q2288778> ;
         ] .
 
-_:b0
+<https://www.wikidata.org/entity/Q2288778>
     a 
         iop:Entity ;
     rdfs:label 
@@ -48,8 +47,8 @@ _:b0
     rdfs:label 
         "statistical unit" .
 
-_:b1
+<https://www.wikidata.org/entity/Q1738991>
     a 
         iop:Property ;
     rdfs:label 
-        "index" .
+        "index number" .

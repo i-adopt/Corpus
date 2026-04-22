@@ -38,7 +38,7 @@ ex:PercentChild
              iop:constrains <https://www.wikidata.org/entity/Q7569> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "condition: living in the housing" ;
+             rdfs:label "condition: dwelling in the buildings within the statistical unit" ;
              iop:constrains _:b0 ;
         ] .
 

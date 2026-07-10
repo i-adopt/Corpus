@@ -9,7 +9,7 @@
         iop:Variable ;
     rdfs:label 
         "Mass ratio of dehp in nail" ;
-    skos:definition "Mass ratio in dehp in nail";
+    skos:definition "Mass ratio of dehp in nail";
     rdfs:comment "nail, diethylhexyl phthalate, mass ratio, person" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/126";
     iop:hasObjectOfInterest 

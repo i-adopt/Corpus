@@ -28,7 +28,7 @@ ex:C4
              iop:constrains _:b0 ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "datum: above ground" ;
+             rdfs:label "reference: above ground" ;
              iop:constrains <https://www.wikidata.org/entity/Q208826> ;
         ] .
 

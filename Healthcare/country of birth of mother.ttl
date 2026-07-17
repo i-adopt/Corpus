@@ -13,28 +13,21 @@
         iop:Variable ;
     rdfs:label 
         "Country of birth of mother" ;
-    skos:definition
+    rdfs:comment 
         """country of birth of mother""" ;
-    rdfs:comment
-        "birth; person; country; condition: mother of patient" ;
-ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/112" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/entity/Q14819852> ;
-    iop:hasMatrix 
         <https://www.wikidata.org/entity/Q215627> ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q6256> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "condition: mother of person" ;
+             rdfs:label "time: at birth" ;
+             iop:constrains <https://www.wikidata.org/entity/Q6256> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "condition: mother of interviewed person" ;
              iop:constrains <https://www.wikidata.org/entity/Q215627> ;
         ] .
-
-<https://www.wikidata.org/entity/Q14819852>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "birth" .
 
 <https://www.wikidata.org/entity/Q215627>
     a 

@@ -4,9 +4,9 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
-@prefix patt: <http://example.org/iadopt/pattern> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
 
 ex:FractionFloodedBuilding
     a 
@@ -15,16 +15,13 @@ ex:FractionFloodedBuilding
         "Fraction of flooded area around building" ;
     rdfs:comment 
         """Fraction of flooded area above 30 cm water level within a 5 m buffer around an affected building""" ;
-    skos:definition 
-        """Fraction of flooded area above 30 cm water level within a 5 m buffer around an affected building""" ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/90" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
         uom:AreaFraction ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "condition: flooded above 30 cm" ;
+             rdfs:label "condition: flooded more than 30 cm above ground" ;
              iop:constrains _:b1 ;
         ] ,
         [ a iop:Constraint ;

@@ -9,13 +9,12 @@
         iop:Variable ;
     rdfs:label 
         "Concentration of Al cations in water" ;
-    skos:definition "Concentration of Al cations in water";
-    rdfs:comment "composition: aluminium, mass concentration, cation, water" ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/121";
+    rdfs:comment 
+        """Concentration of Al cations in water""" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q589446> ;
+        <https://www.wikidata.org/wiki/Q672821> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "composition: aluminium" ;
@@ -26,25 +25,25 @@ _:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
-    iop:hasNumerator 
-        <https://www.wikidata.org/entity/Q326277> ;
     iop:hasDenominator 
-        <https://www.wikidata.org/entity/Q283> .
+        <https://www.wikidata.org/entity/Q283> ;
+    iop:hasNumerator 
+        <https://www.wikidata.org/entity/Q326277> .
 
-<https://www.wikidata.org/entity/Q589446>
+<https://www.wikidata.org/wiki/Q672821>
     a 
         iop:Property ;
     rdfs:label 
-        "mass concentration" .
-
-<https://www.wikidata.org/entity/Q326277>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "cation" .
+        "amount of substance concentration" .
 
 <https://www.wikidata.org/entity/Q283>
     a 
         iop:Entity ;
     rdfs:label 
         "water" .
+
+<https://www.wikidata.org/entity/Q326277>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "cation" .

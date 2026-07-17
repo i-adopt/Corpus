@@ -17,7 +17,7 @@
         <https://www.wikidata.org/wiki/Q672821> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "composition: aluminium" ;
+             rdfs:label "type: aluminium" ;
              iop:constrains <https://www.wikidata.org/entity/Q326277> ;
         ] .
 

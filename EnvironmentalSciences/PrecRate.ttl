@@ -22,11 +22,11 @@
         <https://www.wikidata.org/entity/Q3265048> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "frequency: daily" ;
+             rdfs:label "reporting frequency: daily" ;
              iop:constrains <https://www.wikidata.org/entity/Q10578722> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "frequency: hourly" ;
+             rdfs:label "reporting frequency: hourly" ;
              iop:constrains <https://www.wikidata.org/entity/Q10578722> ;
         ] ,
         [ a iop:Constraint ;

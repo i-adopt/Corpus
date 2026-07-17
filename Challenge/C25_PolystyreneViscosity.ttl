@@ -19,7 +19,7 @@ ex:C25
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q137640633> ;
+        <https://www.wikidata.org/wiki/Q15152757> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "condition: under testing conditions of DIN 5810-1" ;

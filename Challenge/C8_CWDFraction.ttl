@@ -17,7 +17,12 @@ ex:C8
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        uom:AreaFraction .
+        <https://www.wikidata.org/entity/Q11500> ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "normalization: per hectare" ;
+             iop:constrains <https://www.wikidata.org/entity/Q11500> ;
+        ] .
 
 _:b0
     a 
@@ -26,13 +31,13 @@ _:b0
     iop:hasNumerator 
         <https://www.wikidata.org/entity/Q2069734> ;
     iop:hasDenominator 
-        <<https://www.wikidata.org/entity/Q36133>> .
+        <https://www.wikidata.org/entity/Q36133> .
 
-uom:AreaFraction
+<https://www.wikidata.org/entity/Q11500>
     a 
         iop:Property ;
     rdfs:label 
-        "area fraction" .
+        "area" .
 
 <https://www.wikidata.org/entity/Q2069734>
     a 
@@ -40,7 +45,7 @@ uom:AreaFraction
     rdfs:label 
         "coarse woody debris" .
 
-<<https://www.wikidata.org/entity/Q36133>>
+<https://www.wikidata.org/entity/Q36133>
     a 
         iop:Entity ;
     rdfs:label 

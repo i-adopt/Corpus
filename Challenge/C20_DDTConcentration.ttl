@@ -17,7 +17,7 @@ ex:C20
         """Concentration of DDT in a given year at a site impacted by industry, measured in ng/g.""" ;
     iop:hasObjectOfInterest 
         _:b0 ;
-    iop:hasMatrix 
+    iop:hasContextObject 
         <https://www.wikidata.org/entity/Q57951700> ;
     iop:hasStatisticalModifier 
         <https://www.wikidata.org/entity/Q19033> ;
@@ -42,12 +42,6 @@ _:b0
     iop:hasDenominator 
         <https://www.wikidata.org/entity/Q36133> .
 
-<https://www.wikidata.org/entity/Q57951700>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "research site" .
-
 <https://www.wikidata.org/entity/Q19033>
     a 
         iop:StatisticalModifier ;
@@ -59,6 +53,12 @@ _:b0
         iop:Property ;
     rdfs:label 
         "mass fraction" .
+
+<https://www.wikidata.org/entity/Q57951700>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "research site" .
 
 <https://www.wikidata.org/entity/Q163648>
     a 

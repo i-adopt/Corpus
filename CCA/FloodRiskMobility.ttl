@@ -51,4 +51,4 @@ ex:FloodRiskMobility
     a 
         iop:Property ;
     rdfs:label 
-        "index number" .
+        "index" .

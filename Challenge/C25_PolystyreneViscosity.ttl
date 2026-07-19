@@ -15,15 +15,14 @@ ex:C25
         "Dynamic shear viscosity of polystyrene PS042" ;
     rdfs:comment 
         """Dynamic shear viscosity of polystyrene PS042 under the testing conditions of DIN 51810-1.""" ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/31" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q15152757> ;
+        <https://www.wikidata.org/entity/Q15152757> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "condition: under testing conditions of DIN 5810-1" ;
-             iop:constrains <https://www.wikidata.org/entity/Q137640633> ;
+             iop:constrains <https://www.wikidata.org/entity/Q15152757> ;
         ] .
 
 _:b0
@@ -32,8 +31,8 @@ _:b0
     rdfs:label 
         "polystyrene PS042" .
 
-<https://www.wikidata.org/entity/Q137640633>
+<https://www.wikidata.org/entity/Q15152757>
     a 
         iop:Property ;
     rdfs:label 
-        "dynamic shear viscosity" .
+        "dynamic viscosity" .

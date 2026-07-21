@@ -21,11 +21,11 @@
         <https://www.wikidata.org/entity/Q6256> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "time: at birth" ;
-             iop:constrains <https://www.wikidata.org/entity/Q6256> ;
+             rdfs:label "condition: mother of interviewed person" ;
+             iop:constrains <https://www.wikidata.org/entity/Q215627> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "condition: mother of interviewed person" ;
+             rdfs:label "event: at birth" ;
              iop:constrains <https://www.wikidata.org/entity/Q215627> ;
         ] .
 

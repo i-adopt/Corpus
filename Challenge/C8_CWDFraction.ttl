@@ -13,15 +13,15 @@ ex:C8
     rdfs:label 
         "Coarse woody debris abundance" ;
     rdfs:comment 
-        """Coarse woody debris abundance (m2/hectare)""" ;
+        """Coarse woody debris (CWD) abundance per hectare measured from all the plots scaled to a hectare (m2/hectare).""" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q11500> ;
+        uom:AreaFraction ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "normalization: per hectare" ;
-             iop:constrains <https://www.wikidata.org/entity/Q11500> ;
+             iop:constrains <https://www.wikidata.org/entity/Q36133> ;
         ] .
 
 _:b0
@@ -33,11 +33,11 @@ _:b0
     iop:hasDenominator 
         <https://www.wikidata.org/entity/Q36133> .
 
-<https://www.wikidata.org/entity/Q11500>
+uom:AreaFraction
     a 
         iop:Property ;
     rdfs:label 
-        "area" .
+        "area fraction" .
 
 <https://www.wikidata.org/entity/Q2069734>
     a 

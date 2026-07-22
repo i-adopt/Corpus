@@ -3,6 +3,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/HFR> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
 
@@ -11,31 +13,22 @@ ex:EWCT
         iop:Variable ;
     rdfs:label 
         "EWCT Eastward velocity of water current in the water body by high frequency radar" ;
-    skos:definition 
-        """Component of the sea surface current velocity that is directed eastward (positive values) or westward (negative values)""" ;
     rdfs:comment 
-        """Eastward; velocity; water current; water body; positive if eastward""" ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/37" ;
+        """Component of the sea surface current velocity that is directed eastward (positive values) or westward (negative values)""" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q5195029> ;
-    iop:hasMatrix 
-        <https://www.wikidata.org/entity/Q15324> ;
     iop:hasContextObject 
         <https://www.wikidata.org/entity/Q165> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q11465> ;
+        <https://qudt.org/vocab/quantitykind/LinearVelocity> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "type: eastward" ;
-             iop:constrains <https://www.wikidata.org/entity/Q11465> ;
+             rdfs:label "direction: eastward" ;
+             iop:constrains <https://qudt.org/vocab/quantitykind/LinearVelocity> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "location: at the surface" ;
-             iop:constrains <https://www.wikidata.org/entity/Q15324> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "sign meaning: positive eastward" ;
-             iop:constrains <https://www.wikidata.org/entity/Q11465> ;
+             rdfs:label "part: surface level" ;
+             iop:constrains <https://www.wikidata.org/entity/Q5195029> ;
         ] .
 
 <https://www.wikidata.org/entity/Q5195029>
@@ -44,17 +37,11 @@ ex:EWCT
     rdfs:label 
         "water current" .
 
-<https://www.wikidata.org/entity/Q15324>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "water body" .
-
-<https://www.wikidata.org/entity/Q11465>
+<https://qudt.org/vocab/quantitykind/LinearVelocity>
     a 
         iop:Property ;
     rdfs:label 
-        "velocity" .
+        "linear velocity" .
 
 <https://www.wikidata.org/entity/Q165>
     a 

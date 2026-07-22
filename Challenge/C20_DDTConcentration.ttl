@@ -19,18 +19,12 @@ ex:C20
         _:b0 ;
     iop:hasContextObject 
         <https://www.wikidata.org/entity/Q57951700> ;
-    iop:hasStatisticalModifier 
-        <https://www.wikidata.org/entity/Q19033> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q899138> ;
+        <https://www.wikidata.org/entity/Q672821> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "due to: industry" ;
              iop:constrains <https://www.wikidata.org/entity/Q163648> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "temporal extent: 1 year" ;
-             iop:constrains <https://www.wikidata.org/entity/Q19033> ;
         ] .
 
 _:b0
@@ -42,17 +36,11 @@ _:b0
     iop:hasDenominator 
         <https://www.wikidata.org/entity/Q36133> .
 
-<https://www.wikidata.org/entity/Q19033>
-    a 
-        iop:StatisticalModifier ;
-    rdfs:label 
-        "arithmetric mean" .
-
-<https://www.wikidata.org/entity/Q899138>
+<https://www.wikidata.org/entity/Q672821>
     a 
         iop:Property ;
     rdfs:label 
-        "mass fraction" .
+        "amount of substance concentration" .
 
 <https://www.wikidata.org/entity/Q57951700>
     a 

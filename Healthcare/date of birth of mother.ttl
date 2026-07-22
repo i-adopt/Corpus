@@ -3,9 +3,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
-@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
 
 <http://example.org/iadopt/healthcare/birthdatemother>
@@ -16,20 +16,24 @@
     rdfs:comment 
         """date of birth of mother""" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/entity/Q215627> ;
+        <https://www.wikidata.org/wiki/Q14819852> ;
+    iop:hasMatrix 
+        _:b0 ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q205892> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "time: at birth" ;
-             iop:constrains <https://www.wikidata.org/entity/Q205892> ;
-        ] ,
-        [ a iop:Constraint ;
              rdfs:label "condition: mother of the interviewed person" ;
-             iop:constrains <https://www.wikidata.org/entity/Q215627> ;
+             iop:constrains _:b0 ;
         ] .
 
-<https://www.wikidata.org/entity/Q215627>
+<https://www.wikidata.org/wiki/Q14819852>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "birth" .
+
+_:b0
     a 
         iop:Entity ;
     rdfs:label 

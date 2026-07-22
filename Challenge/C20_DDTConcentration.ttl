@@ -17,13 +17,11 @@ ex:C20
         """Concentration of DDT in a given year at a site impacted by industry, measured in ng/g.""" ;
     iop:hasObjectOfInterest 
         _:b0 ;
-    iop:hasContextObject 
-        <https://www.wikidata.org/entity/Q57951700> ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q672821> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "due to: industry" ;
+             rdfs:label "origin: industry" ;
              iop:constrains <https://www.wikidata.org/entity/Q163648> ;
         ] .
 
@@ -41,12 +39,6 @@ _:b0
         iop:Property ;
     rdfs:label 
         "amount of substance concentration" .
-
-<https://www.wikidata.org/entity/Q57951700>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "research site" .
 
 <https://www.wikidata.org/entity/Q163648>
     a 

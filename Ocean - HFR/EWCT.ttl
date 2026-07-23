@@ -16,7 +16,7 @@ ex:EWCT
     rdfs:comment 
         """Component of the sea surface current velocity that is directed eastward (positive values) or westward (negative values)""" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/entity/Q5195029> ;
+        <https://www.wikidata.org/entity/Q283> ;
     iop:hasContextObject 
         <https://www.wikidata.org/entity/Q165> ;
     iop:hasProperty 
@@ -28,14 +28,14 @@ ex:EWCT
         ] ,
         [ a iop:Constraint ;
              rdfs:label "part: surface level" ;
-             iop:constrains <https://www.wikidata.org/entity/Q5195029> ;
+             iop:constrains <https://www.wikidata.org/entity/Q283> ;
         ] .
 
-<https://www.wikidata.org/entity/Q5195029>
+<https://www.wikidata.org/entity/Q283>
     a 
         iop:Entity ;
     rdfs:label 
-        "water current" .
+        "water" .
 
 <https://qudt.org/vocab/quantitykind/LinearVelocity>
     a 

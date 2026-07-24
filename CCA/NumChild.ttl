@@ -3,38 +3,39 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
-@prefix iopp:  <https://w3id.org/iadopt/pattern/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 
 ex:NumChild
     a 
         iop:Variable ;
     rdfs:label 
         "Number of children under the age of 10 years in a statistical unit" ;
-    skos:definition 
-        """number of children under the age of 10 years in a statistical unit which is defined as a grouping of homogeneous neighboring building blocks""" ;
     rdfs:comment 
-        """number; children; under the age of 10 years; statistical unit; defined by grouping of homogeneous neighboring building blocks""" ;
+        """number of children under the age of 10 years in a statistical unit which is defined as a grouping of homogeneous neighboring building blocks""" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/wiki/Q7569> ;
+        <https://www.wikidata.org/entity/Q215627> ;
     iop:hasMatrix 
         <https://www.wikidata.org/wiki/Q3409269> ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q11563> ;
+        <http://qudt.org/vocab/quantitykind/Count> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "condition: age under 10 years" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q7569> ;
+             rdfs:label "age: < 10 years" ;
+             iop:constrains <https://www.wikidata.org/entity/Q215627> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "defined by: grouping of homogeneous neighboring building blocks" ;
              iop:constrains <https://www.wikidata.org/wiki/Q3409269> ;
         ] .
 
-<https://www.wikidata.org/wiki/Q7569>
+<https://www.wikidata.org/entity/Q215627>
     a 
         iop:Entity ;
     rdfs:label 
-        "child" .
+        "person" .
 
 <https://www.wikidata.org/wiki/Q3409269>
     a 
@@ -42,8 +43,8 @@ ex:NumChild
     rdfs:label 
         "statistical unit" .
 
-<https://www.wikidata.org/wiki/Q11563>
+<http://qudt.org/vocab/quantitykind/Count>
     a 
         iop:Property ;
     rdfs:label 
-        "number" .
+        "count" .

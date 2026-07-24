@@ -9,19 +9,14 @@ ex:AOA
         iop:Variable ;
     rdfs:label 
         "Aircraft Angle of Attack." ;
-    skos:definition 
+    rdfs:comment 
         """Aircraft Angle of Attack measured in degrees. The angle at which a straight line from the leading edge to the training edge of an aircraft’s wing meets the relative wind. """ ;
-  rdfs:comment """"aircraft; type: angle of attack; angle""" ;   
-ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/104" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q11436> ;
+    iop:hasMatrix 
+        <https://www.wikidata.org/entity/Q8094> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q11352> ;
-    iop:hasConstraint 
-        [ a iop:Constraint ;
-             rdfs:label "type: angle of attack" ;
-             iop:constrains <https://www.wikidata.org/entity/Q11352> ;
-        ] .
+        <https://qudt.org/vocab/quantitykind/AngleOfAttack> .
 
 <https://www.wikidata.org/entity/Q11436>
     a 
@@ -29,8 +24,14 @@ ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/104" ;
     rdfs:label 
         "aircraft" .
 
-<https://www.wikidata.org/entity/Q11352>
+<https://www.wikidata.org/entity/Q8094>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "wind" .
+
+<https://qudt.org/vocab/quantitykind/AngleOfAttack>
     a 
         iop:Property ;
     rdfs:label 
-        "angle" .
+        "angle of attack" .

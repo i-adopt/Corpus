@@ -7,51 +7,43 @@
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
 
-ex:C5
+ex:C4
     a 
         iop:Variable ;
     rdfs:label 
-        "Atmosphere optical thickness of particulate organic matter ambient aerosol" ;
+        "Atmospheric boundary layer height defined by temperature inversion" ;
     rdfs:comment 
-        """Atmospheric optical thickness of particulate organic matter at 550nm.""" ;
+        """Atmospheric boundary layer height defined by temperature inversion.""" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/entity/Q498957> ;
+        <https://www.wikidata.org/entity/Q1757268> ;
     iop:hasMatrix 
-        <https://www.wikidata.org/entity/Q104541> ;
-    iop:hasContextObject 
         <https://www.wikidata.org/entity/Q8104> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q890809> ;
+        <https://www.wikidata.org/entity/Q208826> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "condition: at 550nm wavelength" ;
-             iop:constrains <https://www.wikidata.org/entity/Q890809> ;
+             rdfs:label "defined by: temperature inversion" ;
+             iop:constrains <https://www.wikidata.org/entity/Q1757268> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "origin: organic" ;
-             iop:constrains <https://www.wikidata.org/entity/Q498957> ;
+             rdfs:label "reference: above ground" ;
+             iop:constrains <https://www.wikidata.org/entity/Q208826> ;
         ] .
 
-<https://www.wikidata.org/entity/Q498957>
+<https://www.wikidata.org/entity/Q1757268>
     a 
         iop:Entity ;
     rdfs:label 
-        "particulates" .
-
-<https://www.wikidata.org/entity/Q104541>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "aerosol" .
-
-<https://www.wikidata.org/entity/Q890809>
-    a 
-        iop:Property ;
-    rdfs:label 
-        "optical depth" .
+        "planetary boundary layer" .
 
 <https://www.wikidata.org/entity/Q8104>
     a 
         iop:Entity ;
     rdfs:label 
         "atmosphere" .
+
+<https://www.wikidata.org/entity/Q208826>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "height" .

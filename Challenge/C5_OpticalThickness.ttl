@@ -15,7 +15,7 @@ ex:C5
     rdfs:comment 
         """Atmospheric optical thickness of particulate organic matter at 550nm.""" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/entity/Q1621273> ;
+        <https://www.wikidata.org/entity/Q498957> ;
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q104541> ;
     iop:hasContextObject 
@@ -28,15 +28,15 @@ ex:C5
              iop:constrains <https://www.wikidata.org/entity/Q890809> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "type: organic" ;
-             iop:constrains <https://www.wikidata.org/entity/Q1621273> ;
+             rdfs:label "origin: organic" ;
+             iop:constrains <https://www.wikidata.org/entity/Q498957> ;
         ] .
 
-<https://www.wikidata.org/entity/Q1621273>
+<https://www.wikidata.org/entity/Q498957>
     a 
         iop:Entity ;
     rdfs:label 
-        "particle" .
+        "particulates" .
 
 <https://www.wikidata.org/entity/Q104541>
     a 

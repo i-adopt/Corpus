@@ -16,10 +16,12 @@ ex:C2
         """Thermodynamic temperature of the air in a height of 1.7 meter, daily maximum""" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q7391292> ;
+    iop:hasContextObject 
+        <https://www.wikidata.org/entity/Q8104> ;
     iop:hasStatisticalModifier 
         <https://www.wikidata.org/entity/Q10578722> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q264647> ;
+        <https://qudt.org/vocab/quantitykind/ThermodynamicTemperature> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "reporting frequency: daily" ;
@@ -42,8 +44,14 @@ ex:C2
     rdfs:label 
         "maximum" .
 
-<https://www.wikidata.org/entity/Q264647>
+<https://qudt.org/vocab/quantitykind/ThermodynamicTemperature>
     a 
         iop:Property ;
     rdfs:label 
         "thermodynamic temperature" .
+
+<https://www.wikidata.org/entity/Q8104>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "atmosphere" .

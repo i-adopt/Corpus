@@ -3,23 +3,24 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 
 ex:C6
     a 
         iop:Variable ;
     rdfs:label 
         "Mass flux of carbon into soil from vegetation due to senescence" ;
-    skos:definition 
+    rdfs:comment 
         """Mass flux of carbon into soil from vegetation due to senescence, measured in kg m-2 s-1. """ ;
-    rdfs:comment
-      """Mass flux; carbon; soil; vegetation; due to senescence. From indicates the source, into indicates the target.""" ;
-  ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/12" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q623> ;
     iop:hasMatrix 
         _:b0 ;
     iop:hasProperty 
-        <http://vocabs.lter-europe.net/EnvThes/30361> ;
+        <http://qudt.org/vocab/quantitykind/MassFluxDensity> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "due to: senescence" ;
@@ -36,18 +37,16 @@ _:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
-    rdfs:label 
-        "flow" ;
     iop:hasSource 
         <http://vocabs.lter-europe.net/EnvThes/20535> ;
     iop:hasTarget 
         <http://vocabs.lter-europe.net/EnvThes/24> .
 
-<http://vocabs.lter-europe.net/EnvThes/30361>
+<http://qudt.org/vocab/quantitykind/MassFluxDensity>
     a 
         iop:Property ;
     rdfs:label 
-        "mass flux" .
+        "mass flux density" .
 
 <http://vocabs.lter-europe.net/EnvThes/20535>
     a 

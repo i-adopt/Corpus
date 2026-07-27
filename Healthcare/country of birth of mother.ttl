@@ -3,10 +3,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
-@prefix sosa: <http://www.w3.org/ns/sosa/> .
-@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 
 <http://example.org/iadopt/healthcare/birthcountrymother>
     a 
@@ -17,7 +17,7 @@
         """country of birth of mother""" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q14819852> ;
-    iop:hasContextObject 
+    iop:hasMatrix 
         <https://www.wikidata.org/entity/Q215627> ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q6256> ;
@@ -33,14 +33,14 @@
     rdfs:label 
         "birth" .
 
-<https://www.wikidata.org/entity/Q6256>
-    a 
-        iop:Property ;
-    rdfs:label 
-        "country" .
-
 <https://www.wikidata.org/entity/Q215627>
     a 
         iop:Entity ;
     rdfs:label 
         "person" .
+
+<https://www.wikidata.org/entity/Q6256>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "country" .

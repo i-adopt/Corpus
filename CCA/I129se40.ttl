@@ -8,14 +8,13 @@
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
 
-<http://example.org/CCA/U236LH>
+<http://example.org/CCA/I129se40>
     a 
         iop:Variable ;
     rdfs:label 
-        "Atomic number of U236 from La Hague" ;
+        "I129 deposition from Ringhals of Sweden" ;
     rdfs:comment 
-        """Number of Uranium-236 atoms per unit mass in sea water from discharges of the nuclear fuel reprocessing plant at La Hage, France. Uranium-236 is a radioactive isotope of element Iodine, with a half-life of about 23.4 million years.
-Units: atoms kg-1""" ;
+        """Number of I129 atoms per mass  of sea water from discharges  of the nuclear fuel reprocessing plant at Ringhals of Sweden (I129se40) in atoms kg-1""" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasContextObject 
@@ -24,18 +23,20 @@ Units: atoms kg-1""" ;
         <https://www.wikidata.org/entity/Q139568528> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "origin: discharges of the nuclear fuel reprocessing plant at La Hage, France" ;
-             iop:constrains <https://www.wikidata.org/entity/Q5955496> ;
+             rdfs:label "origin: from discharges of the nuclear fuel reprocessing plant at Ringhals, Sweden" ;
+             iop:constrains <https://www.wikidata.org/entity/Q2515411> ;
         ] .
 
 _:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
-    iop:hasDenominator 
-        <https://www.wikidata.org/entity/Q283> ;
+    rdfs:label 
+        "bc_0_b39_b0" ;
     iop:hasNumerator 
-        <https://www.wikidata.org/entity/Q5955496> .
+        <https://www.wikidata.org/entity/Q2515411> ;
+    iop:hasDenominator 
+        <https://www.wikidata.org/entity/Q283> .
 
 <https://www.wikidata.org/entity/Q139568528>
     a 
@@ -49,14 +50,14 @@ _:b0
     rdfs:label 
         "sea" .
 
+<https://www.wikidata.org/entity/Q2515411>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "Iodine-129" .
+
 <https://www.wikidata.org/entity/Q283>
     a 
         iop:Entity ;
     rdfs:label 
         "water" .
-
-<https://www.wikidata.org/entity/Q5955496>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "Uranium-236" .

@@ -18,7 +18,7 @@
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasContextObject 
-        <https://www.wikidata.org/entity/Q165> ;
+        <https://www.wikidata.org/entity/Q117750525> ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q139568528> ;
     iop:hasConstraint 
@@ -27,11 +27,11 @@
              iop:constrains <https://www.wikidata.org/entity/Q9121> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "proximateFoI: idealised age tracer" ;
+             rdfs:label "proximate: idealised age tracer" ;
              iop:constrains <https://www.wikidata.org/entity/Q9121> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "origin: LaHague" ;
+             rdfs:label "source: LaHague" ;
              iop:constrains <https://www.wikidata.org/entity/Q9121> ;
         ] ,
         [ a iop:Constraint ;
@@ -54,11 +54,11 @@ _:b0
     rdfs:label 
         "number density per unit mass" .
 
-<https://www.wikidata.org/entity/Q165>
+<https://www.wikidata.org/entity/Q117750525>
     a 
         iop:Entity ;
     rdfs:label 
-        "sea" .
+        "marine environment" .
 
 <https://www.wikidata.org/entity/Q283>
     a 

@@ -3,6 +3,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
 
 <http://example.org/iadopt/CCA/GCs187LH>
     a 
@@ -14,12 +18,12 @@
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasContextObject 
-        <https://www.wikidata.org/entity/Q165> ;
+        <https://www.wikidata.org/entity/Q117750525> ;
     iop:hasProperty 
         <http://qudt.org/vocab/quantitykind/MassicActivity> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "origin: global atmospheric fallout" ;
+             rdfs:label "source: global atmospheric fallout" ;
              iop:constrains <https://www.wikidata.org/entity/Q1154826> ;
         ] .
 
@@ -38,11 +42,11 @@ _:b0
     rdfs:label 
         "Massic Activity" .
 
-<https://www.wikidata.org/entity/Q165>
+<https://www.wikidata.org/entity/Q117750525>
     a 
         iop:Entity ;
     rdfs:label 
-        "sea" .
+        "marine environment" .
 
 <https://www.wikidata.org/entity/Q1154826>
     a 

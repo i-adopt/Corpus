@@ -12,7 +12,7 @@
     a 
         iop:Variable ;
     rdfs:label 
-        "Radioactivity_content_of_137Cs_LaHage" ;
+        "Radioactivity_content_of_137Cs" ;
     rdfs:comment 
         """Radioactivity content of Cesium-137 in sea water from discharges of the nuclear fuel reprocessing plant at La Hage, France. Cesium-137 is a radioactive isotope of element cesium, with a half-life of about 30 years. Units: Becquerel per kilogram (Bq kg-1).""" ;
     iop:hasObjectOfInterest 
@@ -20,12 +20,7 @@
     iop:hasContextObject 
         <https://www.wikidata.org/entity/Q117750525> ;
     iop:hasProperty 
-        <http://qudt.org/vocab/quantitykind/MassicActivity> ;
-    iop:hasConstraint 
-        [ a iop:Constraint ;
-             rdfs:label "source: discharge from La Hague plant" ;
-             iop:constrains <https://www.wikidata.org/entity/Q1154826> ;
-        ] .
+        <http://qudt.org/vocab/quantitykind/MassicActivity> .
 
 _:b0
     a 

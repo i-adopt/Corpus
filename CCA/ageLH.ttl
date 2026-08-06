@@ -20,24 +20,7 @@
     iop:hasContextObject 
         <https://www.wikidata.org/entity/Q117750525> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q139568528> ;
-    iop:hasConstraint 
-        [ a iop:Constraint ;
-             rdfs:label "ultimate: radioactive isotope" ;
-             iop:constrains <https://www.wikidata.org/entity/Q9121> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "proximate: idealised age tracer" ;
-             iop:constrains <https://www.wikidata.org/entity/Q9121> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "source: LaHague" ;
-             iop:constrains <https://www.wikidata.org/entity/Q9121> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "ultimate: age" ;
-             iop:constrains <https://www.wikidata.org/entity/Q139568528> ;
-        ] .
+        <https://www.wikidata.org/entity/Q139568528> .
 
 _:b0
     a 
@@ -46,7 +29,7 @@ _:b0
     iop:hasDenominator 
         <https://www.wikidata.org/entity/Q283> ;
     iop:hasNumerator 
-        <https://www.wikidata.org/entity/Q9121> .
+        <https://www.wikidata.org/entity/Q25276> .
 
 <https://www.wikidata.org/entity/Q139568528>
     a 
@@ -66,8 +49,8 @@ _:b0
     rdfs:label 
         "water" .
 
-<https://www.wikidata.org/entity/Q9121>
+<https://www.wikidata.org/entity/Q25276>
     a 
         iop:Entity ;
     rdfs:label 
-        "atom" .
+        "isotope" .

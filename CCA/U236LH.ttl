@@ -19,7 +19,7 @@ Units: atoms kg-1""" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasContextObject 
-        <https://www.wikidata.org/entity/Q165> ;
+        <https://www.wikidata.org/entity/Q117750525> ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q139568528> .
 
@@ -38,11 +38,11 @@ _:b0
     rdfs:label 
         "number density per unit mass" .
 
-<https://www.wikidata.org/entity/Q165>
+<https://www.wikidata.org/entity/Q117750525>
     a 
         iop:Entity ;
     rdfs:label 
-        "sea" .
+        "marine environment" .
 
 <https://www.wikidata.org/entity/Q283>
     a 

@@ -28,7 +28,7 @@ _:b0
     a 
         iop:Entity ;
     rdfs:label 
-        "hear beat" .
+        "heart beat" .
 
 <hhttps://www.wikidata.org/entity/Q5>
     a 

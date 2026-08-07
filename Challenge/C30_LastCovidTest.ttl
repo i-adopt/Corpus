@@ -27,11 +27,11 @@ ex:C30
              iop:constrains <https://www.wikidata.org/entity/Q104462307> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "event: latest test" ;
-             iop:constrains <https://www.wikidata.org/entity/Q205892> ;
+             rdfs:label "performed by: certified laboratory" ;
+             iop:constrains <https://www.wikidata.org/entity/Q104462307> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "method: by certified laboratory" ;
+             rdfs:label "temporal: latest" ;
              iop:constrains <https://www.wikidata.org/entity/Q104462307> ;
         ] .
 

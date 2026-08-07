@@ -3,6 +3,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
 
@@ -11,17 +13,14 @@
         iop:Variable ;
     rdfs:label 
         "Total Deplorization Ratio" ;
-    skos:definition 
-        """Total Deplorization Ratio: Ratio of backscattered light from the cross-polarized channel to the backscattered light from the parallet-polarized channel. Total is referring to the air as a whole.""" ;
     rdfs:comment 
-        """Deplorization Ratio; air; ADD: atmosphere.""" ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/102" ;
+        """Total Deplorization Ratio: Ratio of backscattered light from the cross-polarized channel to the backscattered light from the parallet-polarized channel. Total is referring to the air as a whole.""" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q7391292> ;
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q8104> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q2095> .
+        <https://www.wikidata.org/wiki/Q1191574> .
 
 <https://www.wikidata.org/entity/Q7391292>
     a 
@@ -35,7 +34,7 @@
     rdfs:label 
         "atmosphere" .
 
-<https://www.wikidata.org/entity/Q2095>
+<https://www.wikidata.org/wiki/Q1191574>
     a 
         iop:Property ;
     rdfs:label 

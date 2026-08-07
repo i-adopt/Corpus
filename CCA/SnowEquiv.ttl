@@ -3,22 +3,25 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 
 <http://example.org/CCA/SnowEquiv>
     a 
         iop:Variable ;
     rdfs:label 
         "Snow water equivalent" ;
-    skos:definition "Snow Water Equivalent or Surface Snow Amount is the mass of water per unit area (kg/m²)";
-    rdfs:comment "condition: if the snow melted, snow, water, surface density" ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/128";
+    rdfs:comment 
+        """Snow Water Equivalent or Surface Snow Amount is the mass of water per unit area (kg/m²)""" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q1907514> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "condition: if the snow melted" ;
+             rdfs:label "process: imelting" ;
              iop:constrains <https://www.wikidata.org/entity/Q7561> ;
         ] .
 

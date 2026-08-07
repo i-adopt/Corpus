@@ -3,63 +3,36 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
 
-ex:C24
+ex:C23
     a 
         iop:Variable ;
     rdfs:label 
-        "dose of applied nanomaterial internalised by a specific cell (number per cell)" ;
-    skos:definition 
-        """ Number of particles internalised into the cell over the duration of the experiment""" ;
-    rdfs:comment
-        """nanomaterial; cell; number per cell; location: intracellular, duration of the experiment; ADD: group of cells""" ;
-    ex:issue
-        "https://github.com/mabablue/I-ADOPT-examples-playground/issues/30" ;
+        "Cellular dose in vitro of nanomaterials (mass / cell)" ;
+    rdfs:comment 
+        """the mass of nanomaterial internalised into the cell over the duration of the experiment, mass per cell""" ;
     iop:hasObjectOfInterest 
-        _:b0 ;
-    iop:hasMatrix 
-        <https://www.wikidata.org/entity/Q20088819> ;
+        <https://www.wikidata.org/entity/Q967847> ;
     iop:hasProperty 
-        _:b1 ;
+        _:b0 ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "location: intracellular" ;
+             rdfs:label "normalized: per cell" ;
              iop:constrains _:b0 ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "time extent. duration of the experiment" ;
-             iop:constrains _:b1 ;
         ] .
-
-_:b0
-    a 
-        iop:Entity ,
-        iop:AsymmetricSystem ;
-    iop:hasNumerator 
-        <https://www.wikidata.org/entity/Q967847> ;
-    iop:hasDenominator 
-        <https://www.wikidata.org/entity/Q7868> .
-
-<https://www.wikidata.org/entity/Q20088819>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "group of cells" .
-
-_:b1
-    a 
-        iop:Property ;
-    rdfs:label 
-        "number per entity" .
 
 <https://www.wikidata.org/entity/Q967847>
     a 
         iop:Entity ;
     rdfs:label 
-        "nanomaterial" .
+        "nanomaterial particle" .
 
-<https://www.wikidata.org/entity/Q7868>
+_:b0
     a 
-        iop:Entity ;
+        iop:Property ;
     rdfs:label 
-        "cell" .
+        "count" .

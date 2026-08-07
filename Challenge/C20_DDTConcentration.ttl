@@ -18,7 +18,7 @@ ex:C20
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasContextObject 
-        _:b1 ;
+        <https://www.wikidata.org/entity/Q57951700> ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q672821> ;
     iop:hasConstraint 
@@ -42,7 +42,7 @@ _:b0
     rdfs:label 
         "amount of substance concentration" .
 
-_:b1
+<https://www.wikidata.org/entity/Q57951700>
     a 
         iop:Entity ;
     rdfs:label 

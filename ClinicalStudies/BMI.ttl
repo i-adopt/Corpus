@@ -3,35 +3,22 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
-
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
 
 <http://example.org/Clinical/BMI>
     a 
         iop:Variable ;
     rdfs:label 
         "Body Mass Index" ;
-    skos:definition 
+    rdfs:comment 
         """Body mass index calculated by dividing body mass by height squared""" ;
-    rdfs:comment
-    """Body mass; index; defined by: body mass divided by height squared; ADD: person""" ;
- ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/107" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/entity/Q620876> ;
-    iop:hasMatrix 
         <https://www.wikidata.org/entity/Q5> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q25472932> ;
-    iop:hasConstraint 
-        [ a iop:Constraint ;
-             rdfs:label "defined by: body mass divided by height squared" ;
-             iop:constrains <https://www.wikidata.org/entity/Q25472932> ;
-        ] .
-
-<https://www.wikidata.org/entity/Q620876>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "body mass" .
+        <https://qudt.org/vocab/quantitykind/BodyMassIndex> .
 
 <https://www.wikidata.org/entity/Q5>
     a 
@@ -39,8 +26,8 @@
     rdfs:label 
         "person" .
 
-<https://www.wikidata.org/entity/Q25472932>
+<https://qudt.org/vocab/quantitykind/BodyMassIndex>
     a 
         iop:Property ;
     rdfs:label 
-        "index" .
+        "body mass index" .

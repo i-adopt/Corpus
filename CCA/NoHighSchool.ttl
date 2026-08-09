@@ -3,9 +3,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
-@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
 
 ex:NoHighSchool
@@ -14,7 +14,7 @@ ex:NoHighSchool
     rdfs:label 
         "Average number of persons without high school diploma during the last three years within a statistical unit" ;
     rdfs:comment 
-        """Average number of persons without high school diploma during the last three years in a statistical unit which is defined as a grouping of homogeneous neighboring building blocks""" ;
+        """Average number of persons without high school diploma during the last three years residing in a statistical unit which is defined as a grouping of homogeneous neighboring building blocks""" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q215627> ;
     iop:hasMatrix 
@@ -25,12 +25,20 @@ ex:NoHighSchool
         <https://qudt.org/vocab/quantitykind/Count> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "condition: without high school diploma in the past three years" ;
+             rdfs:label "education: without high school diploma" ;
              iop:constrains <https://www.wikidata.org/entity/Q215627> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "defined by: grouping of homogeneous neighboring building blocks" ;
              iop:constrains <https://www.wikidata.org/entity/Q3409269> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "temporal extent: previous three years" ;
+             iop:constrains <https://www.wikidata.org/entity/Q215627> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "condition: residing" ;
+             iop:constrains <https://www.wikidata.org/entity/Q215627> ;
         ] .
 
 <https://www.wikidata.org/entity/Q215627>

@@ -3,6 +3,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
 
@@ -11,33 +13,30 @@ ex:C13
         iop:Variable ;
     rdfs:label 
         "Distance to nearest neighbour habitat patch" ;
-    skos:definition """Distance to nearest neighbour habitat patch to measure the degree of connection of EUNIS habitats within a landscape. https://github.com/EuropaBON/EBV-Descriptions/entity/Terrestrial-Connectivity-of-terrestrial-ecosystem-habitat-types""" ;
-    rdfs:comment "habitat patch system, distance, habitat patch, habitat patch, nearest neighbour -> location: nearest neighbour, ADD: type: specfic EUNIS habitat, landscape region, minimum" ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/19" ;
+    rdfs:comment 
+        """Distance to nearest neighbour habitat patch to measure the degree of connection of EUNIS habitats within a landscape. https://github.com/EuropaBON/EBV-Descriptions/entity/Terrestrial-Connectivity-of-terrestrial-ecosystem-habitat-types""" ;
     iop:hasObjectOfInterest 
-        ex:C13_OoI18 ;
+        _:b0 ;
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q25496956> ;
     iop:hasStatisticalModifier 
         <https://www.wikidata.org/entity/Q10585806> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q126017> ;
+        <https://qudt.org/vocab/quantitykind/Distance> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "nearest neighbour" ;
+             rdfs:label "condition: nearest neighbour" ;
              iop:constrains ex:C13_OoI18_part2 ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "type: specific EUNIS habitat" ;
-             iop:constrains ex:C13_OoI18 ;
+             iop:constrains _:b0 ;
         ] .
 
-ex:C13_OoI18
+_:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
-    rdfs:label 
-        "habitat patch system" ;
     iop:hasSource 
         ex:C13_OoI18_part1 ;
     iop:hasTarget 
@@ -55,7 +54,7 @@ ex:C13_OoI18
     rdfs:label 
         "minimum" .
 
-<https://www.wikidata.org/entity/Q126017>
+<https://qudt.org/vocab/quantitykind/Distance>
     a 
         iop:Property ;
     rdfs:label 

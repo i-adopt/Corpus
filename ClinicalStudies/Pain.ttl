@@ -6,6 +6,7 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
 
 <http://example.org/iadopt/clinical/Pain>
     a 
@@ -24,10 +25,6 @@
         [ a iop:Constraint ;
              rdfs:label "temporal extent: chronic" ;
              iop:constrains <https://www.wikidata.org/wiki/Q81938> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "role: patient" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q5> ;
         ] .
 
 <https://www.wikidata.org/wiki/Q81938>

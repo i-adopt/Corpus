@@ -20,7 +20,7 @@ ex:C20
     iop:hasContextObject 
         <https://www.wikidata.org/entity/Q57951700> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q672821> ;
+        <https://qudt.org/vocab/quantitykind/MassFraction> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "origin: industry" ;
@@ -36,11 +36,11 @@ _:b0
     iop:hasDenominator 
         <https://www.wikidata.org/entity/Q36133> .
 
-<https://www.wikidata.org/entity/Q672821>
+<https://qudt.org/vocab/quantitykind/MassFraction>
     a 
         iop:Property ;
     rdfs:label 
-        "amount of substance concentration" .
+        "mass fraction" .
 
 <https://www.wikidata.org/entity/Q57951700>
     a 

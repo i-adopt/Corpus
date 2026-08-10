@@ -28,7 +28,7 @@ ex:C5
              iop:constrains <https://www.wikidata.org/entity/Q890809> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "origin: organic" ;
+             rdfs:label "type: organic" ;
              iop:constrains <https://www.wikidata.org/entity/Q498957> ;
         ] .
 

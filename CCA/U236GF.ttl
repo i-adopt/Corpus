@@ -14,9 +14,11 @@
     rdfs:label 
         "Global fallout of U‑236 (U236GF)" ;
     rdfs:comment 
-        """Global fallout of U‑236 (U236GF) in atoms kg-1""" ;
+        """Global fallout of U‑236 (U236GF) in atoms kg-1 in the artic sea""" ;
     iop:hasObjectOfInterest 
         _:b0 ;
+    iop:hasContextObject 
+        <https://www.wikidata.org/entity/Q788> ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q139568528> ;
     iop:hasConstraint 
@@ -39,6 +41,12 @@ _:b0
         iop:Property ;
     rdfs:label 
         "number density per unit mass" .
+
+<https://www.wikidata.org/entity/Q788>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "artic ocean" .
 
 <https://www.wikidata.org/entity/Q283>
     a 

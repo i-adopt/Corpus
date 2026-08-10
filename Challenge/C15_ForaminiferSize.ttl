@@ -3,6 +3,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
 
@@ -11,10 +13,8 @@ ex:C15
         iop:Variable ;
     rdfs:label 
         "Foraminifera, planktic, size" ;
-    skos:definition
+    rdfs:comment 
         """Size of planktic foraminifers in surface sediments, see https://doi.pangaea.de/10.1594/PANGAEA.126730""" ;
-    rdfs:comment "foraminifera, sediment, size, planctonic -> type: planktonic, surface -> location: surface" ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/21" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q107027> ;
     iop:hasMatrix 
@@ -27,7 +27,7 @@ ex:C15
              iop:constrains <https://www.wikidata.org/entity/Q107027> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "location: surface" ;
+             rdfs:label "part: surface" ;
              iop:constrains <https://www.wikidata.org/entity/Q180184> ;
         ] .
 

@@ -3,32 +3,25 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
-@prefix iopp: <https://w3id.org/iadopt/pattern/> .
-@prefix patt: <http://example.org/iadopt/pattern> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
 
 <http://example.org/CCA/U236GF>
     a 
         iop:Variable ;
     rdfs:label 
         "Global fallout of U‑236 (U236GF)" ;
-    skos:definition 
-        """Global fallout of U‑236 (U236GF) in atoms kg-1""" ;
     rdfs:comment 
         """Global fallout of U‑236 (U236GF) in atoms kg-1""" ;
-   ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/130" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        _:b1 ;
+        <https://www.wikidata.org/entity/Q139568528> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "origin: global" ;
-             iop:constrains _:b0 ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "condition: deposited" ;
              iop:constrains <https://www.wikidata.org/entity/Q5955496> ;
         ] .
 
@@ -37,21 +30,21 @@ _:b0
         iop:Entity ,
         iop:AsymmetricSystem ;
     iop:hasDenominator 
-        <https://www.wikidata.org/entity/Q36133> ;
+        <https://www.wikidata.org/entity/Q283> ;
     iop:hasNumerator 
         <https://www.wikidata.org/entity/Q5955496> .
 
-_:b1
+<https://www.wikidata.org/entity/Q139568528>
     a 
         iop:Property ;
     rdfs:label 
-        "atoms per mass" .
+        "number density per unit mass" .
 
-<https://www.wikidata.org/entity/Q36133>
+<https://www.wikidata.org/entity/Q283>
     a 
         iop:Entity ;
     rdfs:label 
-        "soil" .
+        "water" .
 
 <https://www.wikidata.org/entity/Q5955496>
     a 

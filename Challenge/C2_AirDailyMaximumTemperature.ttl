@@ -28,7 +28,7 @@ ex:C2
              iop:constrains <https://www.wikidata.org/entity/Q10578722> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "location: 1.7 m  above ground" ;
+             rdfs:label "reference: 1.7 m  above ground" ;
              iop:constrains <https://www.wikidata.org/entity/Q7391292> ;
         ] .
 

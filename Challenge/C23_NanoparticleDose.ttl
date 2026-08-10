@@ -18,11 +18,11 @@ ex:C23
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q967847> ;
     iop:hasProperty 
-        _:b0 ;
+        <https://qudt.org/vocab/quantitykind/Mass> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "normalized: per cell" ;
-             iop:constrains _:b0 ;
+             rdfs:label "normalization: per cell" ;
+             iop:constrains <https://qudt.org/vocab/quantitykind/Mass> ;
         ] .
 
 <https://www.wikidata.org/entity/Q967847>
@@ -31,7 +31,7 @@ ex:C23
     rdfs:label 
         "nanomaterial" .
 
-_:b0
+<https://qudt.org/vocab/quantitykind/Mass>
     a 
         iop:Property ;
     rdfs:label 

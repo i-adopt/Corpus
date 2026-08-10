@@ -3,10 +3,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
-@prefix iopp: <https://w3id.org/iadopt/pattern/> .
-@prefix patt: <http://example.org/iadopt/pattern> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
 
 ex:C25
     a 
@@ -18,11 +18,11 @@ ex:C25
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q15152757> ;
+        <http://qudt.org/vocab/quantitykind/DynamicViscosity> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "condition: under testing conditions of DIN 5810-1" ;
-             iop:constrains <https://www.wikidata.org/entity/Q15152757> ;
+             iop:constrains <http://qudt.org/vocab/quantitykind/DynamicViscosity> ;
         ] .
 
 _:b0
@@ -31,7 +31,7 @@ _:b0
     rdfs:label 
         "polystyrene PS042" .
 
-<https://www.wikidata.org/entity/Q15152757>
+<http://qudt.org/vocab/quantitykind/DynamicViscosity>
     a 
         iop:Property ;
     rdfs:label 

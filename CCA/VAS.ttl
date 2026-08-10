@@ -3,6 +3,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
 
@@ -18,7 +20,7 @@
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q8104> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q3711325> ;
+        <https://qudt.org/vocab/quantitykind/Speed> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "direction: northward" ;
@@ -41,7 +43,7 @@
     rdfs:label 
         "atmosphere" .
 
-<https://www.wikidata.org/entity/Q3711325>
+<https://qudt.org/vocab/quantitykind/Speed>
     a 
         iop:Property ;
     rdfs:label 

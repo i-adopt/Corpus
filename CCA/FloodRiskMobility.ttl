@@ -12,39 +12,27 @@ ex:FloodRiskMobility
     a 
         iop:Variable ;
     rdfs:label 
-        "Flood risk index related to mobility and accessibility " ;
+        "Flood risk index related to mobility and accessibility of an urban area" ;
     rdfs:comment 
         """Flood risk index related to mobility and accessibility when streets around the houses are flooded""" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/entity/Q3409269> ;
-    iop:hasContextObject 
         <https://www.wikidata.org/entity/Q702492> ;
     iop:hasProperty 
         _:b0 ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "condition: streets around the houses are flooded" ;
+             rdfs:label "normalized: per statistical unit" ;
              iop:constrains _:b0 ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "defined by: grouping of homogeneous neighboring building blocks" ;
-             iop:constrains <https://www.wikidata.org/entity/Q3409269> ;
         ] .
-
-<https://www.wikidata.org/entity/Q3409269>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "statistical unit" .
-
-_:b0
-    a 
-        iop:Property ;
-    rdfs:label 
-        "pluvial flood risk to mobility and accessibility" .
 
 <https://www.wikidata.org/entity/Q702492>
     a 
         iop:Entity ;
     rdfs:label 
         "urban area" .
+
+_:b0
+    a 
+        iop:Property ;
+    rdfs:label 
+        "pluvial flood risk to mobility and accessibility" .

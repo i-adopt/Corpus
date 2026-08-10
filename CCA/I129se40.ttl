@@ -3,9 +3,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
-@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
 
 <http://example.org/CCA/I129se40>
@@ -14,11 +14,11 @@
     rdfs:label 
         "I129 deposition from Ringhals of Sweden" ;
     rdfs:comment 
-        """Number of I129 atoms per mass  of sea water from discharges  of the nuclear fuel reprocessing plant at Ringhals of Sweden (I129se40) in atoms kg-1""" ;
+        """Number of I129 atoms per mass  of sea water in the artic from discharges  of the nuclear fuel reprocessing plant at Ringhals of Sweden (I129se40) in atoms kg-1""" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasContextObject 
-        <https://www.wikidata.org/entity/Q165> ;
+        <https://www.wikidata.org/entity/Q788> ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q139568528> ;
     iop:hasConstraint 
@@ -44,11 +44,11 @@ _:b0
     rdfs:label 
         "number density per unit mass" .
 
-<https://www.wikidata.org/entity/Q165>
+<https://www.wikidata.org/entity/Q788>
     a 
         iop:Entity ;
     rdfs:label 
-        "sea" .
+        "artic ocean" .
 
 <https://www.wikidata.org/entity/Q2515411>
     a 

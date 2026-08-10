@@ -3,26 +3,26 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
 
 ex:mpvar
     a 
         iop:Variable ;
     rdfs:label 
         "melting point of naphthalene under standard conditions" ;
-    skos:definition 
-        "thermodynamic temperature for the melting point (at the solid to liquid phase transition) of a known purity (99.12 (w/w) sample of naphthalene at atmospheric pressure" ;
     rdfs:comment 
-        "thermodynamic temperature; at the solid to liquid phase transition; purity (99.12 (w/w); naphthalene; at atmospheric pressure" ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/79" ; 
+        """thermodynamic temperature for the melting point (at the solid to liquid phase transition) of a known purity (99.12 (w/w) sample of naphthalene at atmospheric pressure""" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q179724> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q264647> ;
+        <https://qudt.org/vocab/quantitykind/ThermodynamicTemperature> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "temporal extent: at the solid to liquid phase transition" ;
-             iop:constrains <https://www.wikidata.org/entity/Q264647> ;
+             rdfs:label "process: solid to liquid phase transition" ;
+             iop:constrains <https://qudt.org/vocab/quantitykind/ThermodynamicTemperature> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "quality: purity of 99.12 (w/w)" ;
@@ -30,7 +30,7 @@ ex:mpvar
         ] ,
         [ a iop:Constraint ;
              rdfs:label "condition: at 1 atm pressure" ;
-             iop:constrains <https://www.wikidata.org/entity/Q264647> ;
+             iop:constrains <https://qudt.org/vocab/quantitykind/ThermodynamicTemperature> ;
         ] .
 
 <https://www.wikidata.org/entity/Q179724>
@@ -39,7 +39,7 @@ ex:mpvar
     rdfs:label 
         "naphthalene (C10H8)" .
 
-<https://www.wikidata.org/entity/Q264647>
+<https://qudt.org/vocab/quantitykind/ThermodynamicTemperature>
     a 
         iop:Property ;
     rdfs:label 

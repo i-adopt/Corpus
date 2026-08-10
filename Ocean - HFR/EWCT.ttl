@@ -18,7 +18,7 @@ ex:EWCT
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q283> ;
     iop:hasContextObject 
-        <https://www.wikidata.org/entity/Q165> ;
+        <http://purl.obolibrary.org/obo/ENVO_01000320> ;
     iop:hasProperty 
         <https://qudt.org/vocab/quantitykind/LinearVelocity> ;
     iop:hasConstraint 
@@ -43,8 +43,8 @@ ex:EWCT
     rdfs:label 
         "linear velocity" .
 
-<https://www.wikidata.org/entity/Q165>
+<http://purl.obolibrary.org/obo/ENVO_01000320>
     a 
         iop:Entity ;
     rdfs:label 
-        "sea" .
+        "marine environment" .

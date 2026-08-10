@@ -23,7 +23,7 @@
         <https://qudt.org/vocab/quantitykind/Depth> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "defined by: grouping of homogeneous neighboring building blocks" ;
+             rdfs:label "criterium: grouping of homogeneous neighboring building blocks" ;
              iop:constrains <https://www.wikidata.org/entity/Q3409269> ;
         ] ,
         [ a iop:Constraint ;

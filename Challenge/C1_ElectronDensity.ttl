@@ -3,9 +3,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
-@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
 
 ex:C1
@@ -18,7 +18,7 @@ ex:C1
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q108914962> .
+        <https://qudt.org/vocab/quantitykind/NumberDensity> .
 
 _:b0
     a 
@@ -29,7 +29,7 @@ _:b0
     iop:hasDenominator 
         <https://www.wikidata.org/entity/Q79833> .
 
-<https://www.wikidata.org/entity/Q108914962>
+<https://qudt.org/vocab/quantitykind/NumberDensity>
     a 
         iop:Property ;
     rdfs:label 

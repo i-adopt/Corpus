@@ -22,7 +22,7 @@ ex:C4
         <https://www.wikidata.org/entity/Q208826> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "defined by: temperature inversion" ;
+             rdfs:label "process: temperature inversion" ;
              iop:constrains <https://www.wikidata.org/entity/Q1757268> ;
         ] ,
         [ a iop:Constraint ;

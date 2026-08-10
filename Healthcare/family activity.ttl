@@ -3,10 +3,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
-@prefix iopp: <https://w3id.org/iadopt/pattern/> .
-@prefix patt: <http://example.org/iadopt/pattern> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
 
 <http://example.org/iadopt/healthcare/familyactivity>
     a 
@@ -19,14 +19,12 @@
         <https://www.wikidata.org/entity/Q61788146> ;
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q5> ;
-    iop:hasStatisticalModifier 
-        <https://www.wikidata.org/entity/Q2796622> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q11471> ;
+        <https://qudt.org/vocab/quantitykind/Time> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "normalization: week" ;
-             iop:constrains <https://www.wikidata.org/entity/Q11471> ;
+             iop:constrains <https://qudt.org/vocab/quantitykind/Time> ;
         ] .
 
 <https://www.wikidata.org/entity/Q61788146>
@@ -41,13 +39,7 @@
     rdfs:label 
         "person" .
 
-<https://www.wikidata.org/entity/Q2796622>
-    a 
-        iop:StatisticalModifier ;
-    rdfs:label 
-        "mean" .
-
-<https://www.wikidata.org/entity/Q11471>
+<https://qudt.org/vocab/quantitykind/Time>
     a 
         iop:Property ;
     rdfs:label 

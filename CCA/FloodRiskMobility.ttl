@@ -3,10 +3,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
-@prefix iopp: <https://w3id.org/iadopt/pattern/> .
-@prefix patt: <http://example.org/iadopt/pattern> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
 
 ex:FloodRiskMobility
     a 
@@ -16,30 +16,20 @@ ex:FloodRiskMobility
     rdfs:comment 
         """Flood risk index related to mobility and accessibility when streets around the houses are flooded""" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/entity/Q2288778> ;
-    iop:hasMatrix 
         <https://www.wikidata.org/entity/Q3409269> ;
+    iop:hasContextObject 
+        <https://www.wikidata.org/entity/Q702492> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q1738991> ;
+        _:b0 ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "condition: streets around the houses are flooded" ;
-             iop:constrains <https://www.wikidata.org/entity/Q2288778> ;
+             iop:constrains _:b0 ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "defined by: grouping of homogeneous neighboring building blocks" ;
              iop:constrains <https://www.wikidata.org/entity/Q3409269> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "type: mobility and accessibility" ;
-             iop:constrains <https://www.wikidata.org/entity/Q2288778> ;
         ] .
-
-<https://www.wikidata.org/entity/Q2288778>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "flood risk" .
 
 <https://www.wikidata.org/entity/Q3409269>
     a 
@@ -47,8 +37,14 @@ ex:FloodRiskMobility
     rdfs:label 
         "statistical unit" .
 
-<https://www.wikidata.org/entity/Q1738991>
+_:b0
     a 
         iop:Property ;
     rdfs:label 
-        "index" .
+        "pluvial flood risk to mobility and accessibility" .
+
+<https://www.wikidata.org/entity/Q702492>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "urban area" .

@@ -3,10 +3,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
-@prefix iopp: <https://w3id.org/iadopt/pattern/> .
-@prefix patt: <http://example.org/iadopt/pattern> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
 
 <http://example.org/iadopt/neurology/>
     a 
@@ -16,19 +16,24 @@
     rdfs:comment 
         """BPM mean heart rate (beats per minute, ECG-derived)""" ;
     iop:hasObjectOfInterest 
-        _:b0 ;
+        <https://www.wikidata.org/wiki/Q5165683> ;
     iop:hasMatrix 
         <hhttps://www.wikidata.org/entity/Q5> ;
     iop:hasStatisticalModifier 
         <https://www.wikidata.org/entity/Q2796622> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q139564375> .
+        <https://qudt.org/vocab/quantitykind/Count> ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "normalization: per minute" ;
+             iop:constrains <https://qudt.org/vocab/quantitykind/Count> ;
+        ] .
 
-_:b0
+<https://www.wikidata.org/wiki/Q5165683>
     a 
         iop:Entity ;
     rdfs:label 
-        "heart beat" .
+        "heart contraction" .
 
 <hhttps://www.wikidata.org/entity/Q5>
     a 
@@ -42,8 +47,8 @@ _:b0
     rdfs:label 
         "mean" .
 
-<https://www.wikidata.org/entity/Q139564375>
+<https://qudt.org/vocab/quantitykind/Count>
     a 
         iop:Property ;
     rdfs:label 
-        "amount per time" .
+        "count" .

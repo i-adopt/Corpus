@@ -3,10 +3,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
-@prefix iopp: <https://w3id.org/iadopt/pattern/> .
-@prefix patt: <http://example.org/iadopt/pattern> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
 
 ex:C6
     a 
@@ -23,7 +23,7 @@ ex:C6
         <http://qudt.org/vocab/quantitykind/MassFluxDensity> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "due to: senescence" ;
+             rdfs:label "process: senescence" ;
              iop:constrains <https://www.wikidata.org/entity/Q187997> ;
         ] .
 

@@ -22,11 +22,11 @@ ex:C7
     iop:hasStatisticalModifier 
         <https://www.wikidata.org/entity/Q10578722> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q208826> ;
+        <https://qudt.org/vocab/quantitykind/Height> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "datum:above ground" ;
-             iop:constrains <https://www.wikidata.org/entity/Q208826> ;
+             rdfs:label "reference: above ground" ;
+             iop:constrains <https://qudt.org/vocab/quantitykind/Height> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "event: fire" ;
@@ -51,7 +51,7 @@ ex:C7
     rdfs:label 
         "maximum" .
 
-<https://www.wikidata.org/entity/Q208826>
+<https://qudt.org/vocab/quantitykind/Height>
     a 
         iop:Property ;
     rdfs:label 

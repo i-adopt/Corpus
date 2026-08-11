@@ -3,36 +3,35 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 
 <http://example.org/EnvScience/PotEvap>
     a 
         iop:Variable ;
     rdfs:label 
         "Potential evaporation" ;
-    skos:definition "Potential evaporation l m⁻² s⁻¹";
-    rdfs:comment "condition: evaporated, condition: at non-limiting water supply, soil, volume flux, flow, water, atmosphere" ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/125";
+    rdfs:comment 
+        """Potential evaporation l m⁻² s⁻¹""" ;
     iop:hasObjectOfInterest 
-        ex:OoI ;
+        <https://www.wikidata.org/entity/Q190120> ;
     iop:hasMatrix 
         _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q55753416> ;
+        <https://qudt.org/vocab/quantitykind/VolumetricFlux> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "condition: at non-limiting water supply" ;
-             iop:constrains ex:OoI ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "condition: evaporated" ;
-             iop:constrains ex:OoI ;
+             iop:constrains <https://www.wikidata.org/entity/Q190120> ;
         ] .
 
-ex:OoI
+<https://www.wikidata.org/entity/Q190120>
     a 
         iop:Entity ;
     rdfs:label 
-        "water" .
+        "water vapour" .
 
 _:b0
     a 
@@ -43,11 +42,11 @@ _:b0
     iop:hasTarget 
         <https://www.wikidata.org/entity/Q8104> .
 
-<https://www.wikidata.org/entity/Q55753416>
+<https://qudt.org/vocab/quantitykind/VolumetricFlux>
     a 
         iop:Property ;
     rdfs:label 
-        "volume flux" .
+        "volumetric flux" .
 
 <https://www.wikidata.org/entity/Q36133>
     a 

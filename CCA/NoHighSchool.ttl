@@ -3,10 +3,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
-@prefix sosa: <http://www.w3.org/ns/sosa/> .
-@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 
 ex:NoHighSchool
     a 
@@ -18,7 +18,7 @@ ex:NoHighSchool
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q215627> ;
     iop:hasMatrix 
-        <https://www.wikidata.org/entity/Q3409269> ;
+        <https://www.wikidata.org/entity/Q702492> ;
     iop:hasStatisticalModifier 
         <https://www.wikidata.org/wiki/Q19033> ;
     iop:hasProperty 
@@ -29,16 +29,16 @@ ex:NoHighSchool
              iop:constrains <https://www.wikidata.org/entity/Q215627> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "defined by: grouping of homogeneous neighboring building blocks" ;
-             iop:constrains <https://www.wikidata.org/entity/Q3409269> ;
-        ] ,
-        [ a iop:Constraint ;
              rdfs:label "temporal extent: previous three years" ;
              iop:constrains <https://www.wikidata.org/entity/Q215627> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "condition: residing" ;
+             rdfs:label "condition: registered as resident in statistical unit" ;
              iop:constrains <https://www.wikidata.org/entity/Q215627> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "normalization: per statistical unit" ;
+             iop:constrains <https://qudt.org/vocab/quantitykind/Count> ;
         ] .
 
 <https://www.wikidata.org/entity/Q215627>
@@ -47,11 +47,11 @@ ex:NoHighSchool
     rdfs:label 
         "person" .
 
-<https://www.wikidata.org/entity/Q3409269>
+<https://www.wikidata.org/entity/Q702492>
     a 
         iop:Entity ;
     rdfs:label 
-        "statistical unit" .
+        "urban area" .
 
 <https://www.wikidata.org/wiki/Q19033>
     a 

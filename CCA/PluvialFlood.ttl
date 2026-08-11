@@ -3,10 +3,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
-@prefix sosa: <http://www.w3.org/ns/sosa/> .
-@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 
 <http://example.org/iadopt/CCA/PluvialFlood>
     a 
@@ -18,17 +18,17 @@
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q283> ;
     iop:hasMatrix 
-        <https://www.wikidata.org/entity/Q3409269> ;
+        <https://www.wikidata.org/entity/Q702492> ;
     iop:hasProperty 
         <https://qudt.org/vocab/quantitykind/Depth> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "criterium: grouping of homogeneous neighboring building blocks" ;
-             iop:constrains <https://www.wikidata.org/entity/Q3409269> ;
-        ] ,
-        [ a iop:Constraint ;
              rdfs:label "event: 100 year rain" ;
              iop:constrains <https://www.wikidata.org/entity/Q283> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "normalization: per statistical unit" ;
+             iop:constrains <https://qudt.org/vocab/quantitykind/Depth> ;
         ] .
 
 <https://www.wikidata.org/entity/Q283>
@@ -37,11 +37,11 @@
     rdfs:label 
         "water" .
 
-<https://www.wikidata.org/entity/Q3409269>
+<https://www.wikidata.org/entity/Q702492>
     a 
         iop:Entity ;
     rdfs:label 
-        "statistical unit" .
+        "urban area" .
 
 <https://qudt.org/vocab/quantitykind/Depth>
     a 

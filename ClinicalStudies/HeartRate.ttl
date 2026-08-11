@@ -2,21 +2,19 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix ex: <http://example.org/iadopt/challenge/> .
-@prefix sosa: <http://www.w3.org/ns/sosa/> .
-@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix ex: <http://example.org/iadopt/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
 
-<http://example.org/iadopt/neurology/>
+ex:heartrate
     a 
         iop:Variable ;
     rdfs:label 
         "BPM Mean heart rate" ;
     rdfs:comment 
-        """BPM mean heart rate (beats per minute, ECG-derived)""" ;
+        """SJC: property changed to hearbeat; add normalization 'per minute'""" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/wiki/Q5165683> ;
+        <https://www.wikidata.org/entity/Q127006> ;
     iop:hasMatrix 
         <hhttps://www.wikidata.org/entity/Q5> ;
     iop:hasStatisticalModifier 
@@ -25,15 +23,19 @@
         <https://qudt.org/vocab/quantitykind/Count> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
+             rdfs:label "heart" ;
+             iop:constrains <https://www.wikidata.org/entity/Q127006> ;
+        ] ,
+        [ a iop:Constraint ;
              rdfs:label "normalization: per minute" ;
              iop:constrains <https://qudt.org/vocab/quantitykind/Count> ;
         ] .
 
-<https://www.wikidata.org/wiki/Q5165683>
+<https://www.wikidata.org/entity/Q127006>
     a 
         iop:Entity ;
     rdfs:label 
-        "heart contraction" .
+        "muscle contraction" .
 
 <hhttps://www.wikidata.org/entity/Q5>
     a 

@@ -16,7 +16,7 @@ ex:PersWelfare
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q215627> ;
     iop:hasMatrix 
-        <https://www.wikidata.org/entity/Q3409269> ;
+        <https://www.wikidata.org/entity/Q702492> ;
     iop:hasProperty 
         <https://qudt.org/vocab/quantitykind/Count> ;
     iop:hasConstraint 
@@ -25,8 +25,8 @@ ex:PersWelfare
              iop:constrains <https://www.wikidata.org/entity/Q215627> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "defined by: grouping of homogeneous neighboring building blocks" ;
-             iop:constrains <https://www.wikidata.org/entity/Q3409269> ;
+             rdfs:label "condition: registered as residents in a statistical unit" ;
+             iop:constrains <https://www.wikidata.org/entity/Q215627> ;
         ] .
 
 <https://www.wikidata.org/entity/Q215627>
@@ -35,11 +35,11 @@ ex:PersWelfare
     rdfs:label 
         "person" .
 
-<https://www.wikidata.org/entity/Q3409269>
+<https://www.wikidata.org/entity/Q702492>
     a 
         iop:Entity ;
     rdfs:label 
-        "statistical unit" .
+        "urban area" .
 
 <https://qudt.org/vocab/quantitykind/Count>
     a 

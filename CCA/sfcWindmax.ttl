@@ -23,11 +23,11 @@
         <https://www.wikidata.org/entity/Q3711325> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "location: near surface" ;
+             rdfs:label "part: near surface" ;
              iop:constrains <https://www.wikidata.org/entity/Q8094> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "type: gust" ;
+             rdfs:label "event: gust" ;
              iop:constrains <https://www.wikidata.org/entity/Q8094> ;
         ] ,
         [ a iop:Constraint ;

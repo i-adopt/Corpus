@@ -21,7 +21,7 @@ ex:C26
         <https://www.wikidata.org/entity/Q354718> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "thickness: 5 nm thick layer" ;
+             rdfs:label "thickness: 5 nm" ;
              iop:constrains <https://www.wikidata.org/entity/Q897> ;
         ] .
 

@@ -16,7 +16,7 @@ ex:C13
     rdfs:comment 
         """Distance to nearest neighbour habitat patch to measure the degree of connection of EUNIS habitats within a landscape. https://github.com/EuropaBON/EBV-Descriptions/entity/Terrestrial-Connectivity-of-terrestrial-ecosystem-habitat-types""" ;
     iop:hasObjectOfInterest 
-        _:b0 ;
+        ex:C13_OoI18 ;
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q25496956> ;
     iop:hasStatisticalModifier 
@@ -30,13 +30,15 @@ ex:C13
         ] ,
         [ a iop:Constraint ;
              rdfs:label "subkind: specific EUNIS habitat" ;
-             iop:constrains _:b0 ;
+             iop:constrains ex:C13_OoI18 ;
         ] .
 
-_:b0
+ex:C13_OoI18
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
+    rdfs:label 
+        "habitat patch system" ;
     iop:hasSource 
         ex:C13_OoI18_part1 ;
     iop:hasTarget 

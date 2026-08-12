@@ -21,7 +21,7 @@ ex:FloodRiskMobility
         _:b0 ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "normalized: per statistical unit" ;
+             rdfs:label "normalization: per statistical unit" ;
              iop:constrains _:b0 ;
         ] .
 

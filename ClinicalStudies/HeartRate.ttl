@@ -5,6 +5,8 @@
 @prefix ex: <http://example.org/iadopt/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 
 ex:heartrate
     a 
@@ -14,28 +16,24 @@ ex:heartrate
     rdfs:comment 
         """SJC: property changed to hearbeat; add normalization 'per minute'""" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/entity/Q127006> ;
+        <https://www.wikidata.org/entity/Q1072> ;
     iop:hasMatrix 
         <hhttps://www.wikidata.org/entity/Q5> ;
     iop:hasStatisticalModifier 
         <https://www.wikidata.org/entity/Q2796622> ;
     iop:hasProperty 
-        <https://qudt.org/vocab/quantitykind/Count> ;
+        <https://qudt.org/vocab/quantitykind/HeartRate> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "heart" ;
-             iop:constrains <https://www.wikidata.org/entity/Q127006> ;
-        ] ,
-        [ a iop:Constraint ;
              rdfs:label "normalization: per minute" ;
-             iop:constrains <https://qudt.org/vocab/quantitykind/Count> ;
+             iop:constrains <https://qudt.org/vocab/quantitykind/HeartRate> ;
         ] .
 
-<https://www.wikidata.org/entity/Q127006>
+<https://www.wikidata.org/entity/Q1072>
     a 
         iop:Entity ;
     rdfs:label 
-        "muscle contraction" .
+        "heart" .
 
 <hhttps://www.wikidata.org/entity/Q5>
     a 
@@ -49,8 +47,8 @@ ex:heartrate
     rdfs:label 
         "mean" .
 
-<https://qudt.org/vocab/quantitykind/Count>
+<https://qudt.org/vocab/quantitykind/HeartRate>
     a 
         iop:Property ;
     rdfs:label 
-        "count" .
+        "hear rate" .

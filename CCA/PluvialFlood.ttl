@@ -17,7 +17,7 @@
         """Pluvial flood expressed as water depth due to 100 year event in a statistical unit, defined by a grouping of homogeneous neighboring building blocks""" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q283> ;
-    iop:hasMatrix 
+    iop:hasContextObject 
         <https://www.wikidata.org/entity/Q702492> ;
     iop:hasProperty 
         <https://qudt.org/vocab/quantitykind/Depth> ;
@@ -37,14 +37,14 @@
     rdfs:label 
         "water" .
 
-<https://www.wikidata.org/entity/Q702492>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "urban area" .
-
 <https://qudt.org/vocab/quantitykind/Depth>
     a 
         iop:Property ;
     rdfs:label 
         "depth" .
+
+<https://www.wikidata.org/entity/Q702492>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "urban area" .

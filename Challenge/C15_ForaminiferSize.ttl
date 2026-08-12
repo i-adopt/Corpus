@@ -23,7 +23,7 @@ ex:C15
         <https://www.wikidata.org/entity/Q322481> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "type: planktonic" ;
+             rdfs:label "subkind: planktonic" ;
              iop:constrains <https://www.wikidata.org/entity/Q107027> ;
         ] ,
         [ a iop:Constraint ;

@@ -25,7 +25,7 @@
              iop:constrains <https://www.wikidata.org/entity/Q623> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "type: organic" ;
+             rdfs:label "subkind: organic" ;
              iop:constrains <https://www.wikidata.org/entity/Q623> ;
         ] .
 

@@ -3,10 +3,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
-@prefix sosa: <http://www.w3.org/ns/sosa/> .
-@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 
 <http://example.org/CCA/I129se40>
     a 
@@ -17,14 +17,18 @@
         """Number of I129 atoms per mass  of sea water in the artic from discharges  of the nuclear fuel reprocessing plant at Ringhals of Sweden (I129se40) in atoms kg-1""" ;
     iop:hasObjectOfInterest 
         _:b0 ;
-    iop:hasContextObject 
+    iop:hasMatrix 
         <https://www.wikidata.org/entity/Q788> ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q139568528> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "origin: from discharges of the nuclear fuel reprocessing plant at Ringhals, Sweden" ;
+             rdfs:label "source: from discharges of the nuclear fuel reprocessing plant at Ringhals, Sweden" ;
              iop:constrains <https://www.wikidata.org/entity/Q2515411> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "subkind: sea water" ;
+             iop:constrains <https://www.wikidata.org/entity/Q283> ;
         ] .
 
 _:b0
@@ -36,17 +40,17 @@ _:b0
     iop:hasDenominator 
         <https://www.wikidata.org/entity/Q283> .
 
-<https://www.wikidata.org/entity/Q139568528>
-    a 
-        iop:Property ;
-    rdfs:label 
-        "number density per unit mass" .
-
 <https://www.wikidata.org/entity/Q788>
     a 
         iop:Entity ;
     rdfs:label 
         "artic ocean" .
+
+<https://www.wikidata.org/entity/Q139568528>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "number density per unit mass" .
 
 <https://www.wikidata.org/entity/Q2515411>
     a 

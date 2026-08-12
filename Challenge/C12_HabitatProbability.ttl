@@ -23,7 +23,7 @@ ex:C12
         <https://lod.nal.usda.gov/nalt/137027> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "temporal extent: calendar year" ;
+             rdfs:label "temporal reference: calendar year" ;
              iop:constrains <https://lod.nal.usda.gov/nalt/137027> ;
         ] ,
         [ a iop:Constraint ;
@@ -33,6 +33,10 @@ ex:C12
         [ a iop:Constraint ;
              rdfs:label "region: European Union" ;
              iop:constrains <https://www.wikidata.org/entity/Q11081619> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "normalization: 100x100 m grid cell" ;
+             iop:constrains <https://lod.nal.usda.gov/nalt/137027> ;
         ] .
 
 <https://www.wikidata.org/entity/Q52105>

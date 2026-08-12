@@ -29,7 +29,7 @@ ex:C13
              iop:constrains ex:C13_OoI18_part2 ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "type: specific EUNIS habitat" ;
+             rdfs:label "subkind: specific EUNIS habitat" ;
              iop:constrains _:b0 ;
         ] .
 

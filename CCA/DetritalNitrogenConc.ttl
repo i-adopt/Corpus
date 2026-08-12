@@ -23,7 +23,7 @@ ex:nitrCon
         <https://qudt.org/vocab/quantitykind/AmountOfSubstancePerMass> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "origin: detrital organic matter" ;
+             rdfs:label "source: detrital organic matter" ;
              iop:constrains <https://www.wikidata.org/entity/Q627> ;
         ] ,
         [ a iop:Constraint ;

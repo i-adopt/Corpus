@@ -26,7 +26,7 @@ ex:ActinicFlux
         <https://www.wikidata.org/entity/Q83699542> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "type: upwelling" ;
+             rdfs:label "subkind: upwelling" ;
              iop:constrains <https://www.wikidata.org/entity/Q18335> ;
         ] ,
         [ a iop:Constraint ;
@@ -34,7 +34,7 @@ ex:ActinicFlux
              iop:constrains <https://www.wikidata.org/entity/Q18335> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "type: actinic" ;
+             rdfs:label "subkind: actinic" ;
              iop:constrains <https://www.wikidata.org/entity/Q83699542> ;
         ] .
 

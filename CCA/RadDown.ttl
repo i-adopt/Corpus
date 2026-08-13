@@ -21,7 +21,7 @@
         <https://qudt.org/vocab/quantitykind/Irradiance> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "type: long-wave" ;
+             rdfs:label "subkind: long-wave" ;
              iop:constrains <https://www.wikidata.org/wiki/Q17996169> ;
         ] ,
         [ a iop:Constraint ;

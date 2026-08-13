@@ -13,7 +13,7 @@ ex:C2
     rdfs:label 
         "Air daily maximum temperature at 1.7m" ;
     rdfs:comment 
-        """Thermodynamic temperature of the air in a height of 1.7 meter, daily maximum""" ;
+        """Thermodynamic temperature of the air in a height of 1.7 meter aboveground, daily maximum in Celsium degrees.""" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/8" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q7391292> ;

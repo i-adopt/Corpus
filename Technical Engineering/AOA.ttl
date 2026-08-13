@@ -10,7 +10,7 @@ ex:AOA
     rdfs:label 
         "Aircraft Angle of Attack." ;
     rdfs:comment 
-        """Aircraft Angle of Attack measured in degrees. The angle at which a straight line from the leading edge to the training edge of an aircraft’s wing meets the relative wind. """ ;
+        """Aircraft Angle of Attack measured in degrees. The angle at which a straight line from the leading edge to the trailing edge of an aircraft’s wing meets the relative wind. """ ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/104"
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q11436> ;

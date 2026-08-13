@@ -3,10 +3,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
-@prefix iopp: <https://w3id.org/iadopt/pattern/> .
-@prefix patt: <http://example.org/iadopt/pattern> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
 
 <http://example.org/CCA/SnowEquiv>
     a 
@@ -15,39 +15,35 @@
         "Snow water equivalent" ;
     rdfs:comment 
         """Snow Water Equivalent or Surface Snow Amount is the mass of water per unit area (kg/m²)""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/128"
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q1907514> ;
-    iop:hasConstraint 
-        [ a iop:Constraint ;
-             rdfs:label "process: melting" ;
-             iop:constrains <https://www.wikidata.org/entity/Q7561> ;
-        ] .
+        <https://qudt.org/vocab/quantitykind/SurfaceDensity> .
 
 _:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
-    iop:hasNumerator 
-        <https://www.wikidata.org/entity/Q7561> ;
     iop:hasDenominator 
-        <https://www.wikidata.org/entity/Q11500> .
+        <https://www.wikidata.org/entity/Q11500> ;
+    iop:hasNumerator 
+        <https://www.wikidata.org/entity/Q7561> .
 
-<https://www.wikidata.org/entity/Q1907514>
+<https://qudt.org/vocab/quantitykind/SurfaceDensity>
     a 
         iop:Property ;
     rdfs:label 
         "surface density" .
-
-<https://www.wikidata.org/entity/Q7561>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "snow" .
 
 <https://www.wikidata.org/entity/Q11500>
     a 
         iop:Entity ;
     rdfs:label 
         "area" .
+
+<https://www.wikidata.org/entity/Q7561>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "snow" .

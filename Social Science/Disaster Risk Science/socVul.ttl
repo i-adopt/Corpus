@@ -17,7 +17,7 @@
     rdfs:comment 
         """Social Vulnerability to pluvial floods of the residents""" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/wiki/Q581445> ;
+        <https://www.wikidata.org/entity/Q581445> ;
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q215627> ;
     iop:hasProperty 
@@ -29,10 +29,10 @@
         ] ,
         [ a iop:Constraint ;
              rdfs:label "hazard: pluvial flood" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q581445> ;
+             iop:constrains <https://www.wikidata.org/entity/Q581445> ;
         ] .
 
-<https://www.wikidata.org/wiki/Q581445>
+<https://www.wikidata.org/entity/Q581445>
     a 
         iop:Entity ;
     rdfs:label 

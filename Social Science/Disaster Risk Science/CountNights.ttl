@@ -24,7 +24,7 @@
         <https://qudt.org/vocab/quantitykind/Count> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "thermodynamic temperature: > 20 ° C" ;
+             rdfs:label "temperature: > 20 ° C" ;
              iop:constrains <https://www.wikidata.org/entity/Q575> ;
         ] .
 

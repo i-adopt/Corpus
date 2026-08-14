@@ -13,20 +13,30 @@
         iop:Variable ;
     rdfs:label 
         "Social Vulnerability to pluvial floods of the residents" ;
+   ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/167" ;
     rdfs:comment 
         """Social Vulnerability to pluvial floods of the residents""" ;
     iop:hasObjectOfInterest 
-        _:b0 ;
+        <https://www.wikidata.org/wiki/Q581445> ;
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q215627> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q1738991> .
+        <https://www.wikidata.org/entity/Q1738991> ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "role: resident" ;
+             iop:constrains <https://www.wikidata.org/entity/Q215627> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "hazard: pluvial flood" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q581445> ;
+        ] .
 
-_:b0
+<https://www.wikidata.org/wiki/Q581445>
     a 
         iop:Entity ;
     rdfs:label 
-        "social vulnerability to pluvial floods" .
+        "social vulnerability" .
 
 <https://www.wikidata.org/entity/Q215627>
     a 

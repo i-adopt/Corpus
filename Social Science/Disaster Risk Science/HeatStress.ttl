@@ -15,19 +15,20 @@
         "Heat stress index" ;
     rdfs:comment 
         """Heat stress index per district""" ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/170" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q123414> ;
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q702492> ;
-    iop:hasContextObject 
-        <https://www.wikidata.org/entity/Q44432> ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q1738991> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "normalization: district" ;
              iop:constrains <https://www.wikidata.org/entity/Q1738991> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "cause: heat" ;
+             iop:constrains <https://www.wikidata.org/entity/Q123414> ;
         ] .
 
 <https://www.wikidata.org/entity/Q123414>
@@ -48,8 +49,4 @@
     rdfs:label 
         "index" .
 
-<https://www.wikidata.org/entity/Q44432>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "heat" .
+<http://example.org/iadopt/SS/DRS/heatstress> <http://example.org/iadopt/issue> "https://github.com/mabablue/I-ADOPT-examples-playground/issues/170" .

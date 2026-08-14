@@ -15,8 +15,6 @@
         "Partial Solar Obscuration" ;
     rdfs:comment 
         """Partial Solar Obscuration in percentage""" ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/171" ;
-
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasMatrix 
@@ -26,7 +24,7 @@
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "process: eclipse" ;
-             iop:constrains _:b1 ;
+             iop:constrains <https://www.wikidata.org/entity/Q525> ;
         ] .
 
 _:b0
@@ -61,3 +59,5 @@ _:b2
         iop:Entity ;
     rdfs:label 
         "total area" .
+
+<http://example.org/iadopt/NS/SP/solarobs> <http://example.org/iadopt/issue> "https://github.com/mabablue/I-ADOPT-examples-playground/issues/171" .

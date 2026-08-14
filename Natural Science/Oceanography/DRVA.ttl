@@ -3,6 +3,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/HFR> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
 
@@ -13,24 +15,34 @@ ex:RadVelDirHF
         "DRVA Direction of radial velocity of water current relative to instrument and to True North by high frequency radar" ;
     rdfs:comment 
         """The compass direction in degrees positive clockwise from TrueNorth of the component of water velocity in a water body along radial lines centered at the HFR antenna.""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/62" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        <http://qudt.org/vocab/quantitykind/PlaneAngle> ;
-    iop:hasConstraint 
-        [ a iop:Constraint ;
-             rdfs:label "reference: relative to True North" ;
-             iop:constrains <http://qudt.org/vocab/quantitykind/PlaneAngle> ;
-        ] .
+        <http://qudt.org/vocab/quantitykind/PlaneAngle> .
 
 _:b0
     a 
-        iop:Entity ;
-    rdfs:label 
-        "RDVA radial velocity (away from) of water current related to instrument" .
+        iop:Entity ,
+        iop:SymmetricSystem ;
+    iop:hasPart 
+        _:b1 ,
+        <https://vocab.nerc.ac.uk/collection/S20/current/S2000002/> .
 
 <http://qudt.org/vocab/quantitykind/PlaneAngle>
     a 
         iop:Property ;
     rdfs:label 
         "plane angle" .
+
+_:b1
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "RDVA radial velocity of water current related to instrument" .
+
+<https://vocab.nerc.ac.uk/collection/S20/current/S2000002/>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "True North" .

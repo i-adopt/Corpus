@@ -21,7 +21,7 @@ ex:AOA
     iop:hasContextObject 
         <https://www.wikidata.org/entity/Q11436> ;
     iop:hasProperty 
-        <https://qudt.org/vocab/quantitykind/AngleOfAttack> .
+        <https://qudt.org/vocab/quantitykind/PlaneAngle> .
 
 _:b0
     a 
@@ -31,11 +31,11 @@ _:b0
         _:b1 ,
         _:b2 .
 
-<https://qudt.org/vocab/quantitykind/AngleOfAttack>
+<https://qudt.org/vocab/quantitykind/PlaneAngle>
     a 
         iop:Property ;
     rdfs:label 
-        "angle of attack" .
+        "plane angle" .
 
 <https://www.wikidata.org/entity/Q11436>
     a 

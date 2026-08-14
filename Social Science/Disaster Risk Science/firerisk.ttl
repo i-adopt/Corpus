@@ -7,7 +7,6 @@
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
-
 <http://example.org/iadopt/SS/DRS/firerisk>
     a 
         iop:Variable ;
@@ -15,19 +14,20 @@
         "Fire risk per district" ;
     rdfs:comment 
         """Fire risk per district""" ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/169" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q104493> ;
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q702492> ;
-    iop:hasContextObject 
-        <https://www.wikidata.org/entity/Q3196> ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q1738991> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "normalization: district" ;
              iop:constrains <https://www.wikidata.org/entity/Q1738991> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "cause: fire" ;
+             iop:constrains <https://www.wikidata.org/entity/Q104493> ;
         ] .
 
 <https://www.wikidata.org/entity/Q104493>
@@ -47,9 +47,4 @@
         iop:Property ;
     rdfs:label 
         "index" .
-
-<https://www.wikidata.org/entity/Q3196>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "fire" .
+<http://example.org/iadopt/ActinicFlux> <http://example.org/iadopt/issue> "https://github.com/mabablue/I-ADOPT-examples-playground/issues/167" .

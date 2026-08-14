@@ -18,7 +18,7 @@ ex:AOA
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/104" ;
     iop:hasObjectOfInterest 
         _:b0 ;
-    iop:hasContextObject 
+    iop:hasMatrix 
         <https://www.wikidata.org/entity/Q11436> ;
     iop:hasProperty 
         <https://qudt.org/vocab/quantitykind/PlaneAngle> .
@@ -31,17 +31,17 @@ _:b0
         _:b1 ,
         _:b2 .
 
-<https://qudt.org/vocab/quantitykind/PlaneAngle>
-    a 
-        iop:Property ;
-    rdfs:label 
-        "plane angle" .
-
 <https://www.wikidata.org/entity/Q11436>
     a 
         iop:Entity ;
     rdfs:label 
         "aircraft" .
+
+<https://qudt.org/vocab/quantitykind/PlaneAngle>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "plane angle" .
 
 _:b1
     a 

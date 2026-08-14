@@ -47,4 +47,4 @@
         iop:Property ;
     rdfs:label 
         "index" .
-<http://example.org/iadopt/ActinicFlux> <http://example.org/iadopt/issue> "https://github.com/mabablue/I-ADOPT-examples-playground/issues/167" .
+<http://example.org/iadopt/SS/DRS/firerisk> <http://example.org/iadopt/issue> "https://github.com/mabablue/I-ADOPT-examples-playground/issues/169" .

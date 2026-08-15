@@ -15,6 +15,7 @@ ex:NumChild
         "Number of children under the age of 10 years in a statistical unit" ;
     rdfs:comment 
         """number of children under the age of 10 years in a statistical unit which is defined as a grouping of homogeneous neighboring building blocks in an urban area""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/91" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q215627> ;
     iop:hasContextObject 

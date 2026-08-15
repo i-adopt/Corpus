@@ -3,6 +3,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
 
@@ -12,10 +14,10 @@ ex:PersWelfare
     rdfs:label 
         "Number of persons receiving welfare in a statistical unit" ;
     rdfs:comment 
-        """number of persons receiving welfare in a statistical unit which is defined as a grouping of homogeneous neighboring building blocks""" ;
+        """number of persons receiving welfare in a statistical unit which is defined as a grouping of homogeneous neighboring building blocks in an urban area""" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q215627> ;
-    iop:hasMatrix 
+    iop:hasContextObject 
         <https://www.wikidata.org/entity/Q702492> ;
     iop:hasProperty 
         <https://qudt.org/vocab/quantitykind/Count> ;
@@ -27,6 +29,10 @@ ex:PersWelfare
         [ a iop:Constraint ;
              rdfs:label "condition: registered as residents in a statistical unit" ;
              iop:constrains <https://www.wikidata.org/entity/Q215627> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "normalization: per statistical unit" ;
+             iop:constrains <https://qudt.org/vocab/quantitykind/Count> ;
         ] .
 
 <https://www.wikidata.org/entity/Q215627>
@@ -35,14 +41,14 @@ ex:PersWelfare
     rdfs:label 
         "person" .
 
-<https://www.wikidata.org/entity/Q702492>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "urban area" .
-
 <https://qudt.org/vocab/quantitykind/Count>
     a 
         iop:Property ;
     rdfs:label 
         "count" .
+
+<https://www.wikidata.org/entity/Q702492>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "urban area" .

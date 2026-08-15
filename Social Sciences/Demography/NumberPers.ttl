@@ -3,10 +3,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
-@prefix iopp: <https://w3id.org/iadopt/pattern/> .
-@prefix patt: <http://example.org/iadopt/pattern> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
 
 ex:NumberPers
     a 
@@ -14,33 +14,33 @@ ex:NumberPers
     rdfs:label 
         "Total Number of people living in a statistical unit" ;
     rdfs:comment 
-        """total number of people living within a statistical unit which is defined as a grouping of homogeneous neighboring building blocks""" ;
+        """total number of people living within a statistical unit which is defined as a grouping of homogeneous neighboring building blocks in an urban area""" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/entity/Q22947> ;
-    iop:hasMatrix 
-        <https://www.wikidata.org/entity/Q3409269> ;
+        <https://www.wikidata.org/entity/Q215627> ;
+    iop:hasContextObject 
+        <https://www.wikidata.org/entity/Q702492> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q11563> ;
+        <https://qudt.org/vocab/quantitykind/Count> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "defined by: grouping of homogeneous neighboring building blocks" ;
-             iop:constrains <https://www.wikidata.org/entity/Q3409269> ;
+             rdfs:label "condition: registered as resident" ;
+             iop:constrains <https://www.wikidata.org/entity/Q215627> ;
         ] .
 
-<https://www.wikidata.org/entity/Q22947>
+<https://www.wikidata.org/entity/Q215627>
     a 
         iop:Entity ;
     rdfs:label 
-        "inhabitant" .
+        "person" .
 
-<https://www.wikidata.org/entity/Q3409269>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "statistical unit" .
-
-<https://www.wikidata.org/entity/Q11563>
+<https://qudt.org/vocab/quantitykind/Count>
     a 
         iop:Property ;
     rdfs:label 
-        "number" .
+        "count" .
+
+<https://www.wikidata.org/entity/Q702492>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "urban area" .

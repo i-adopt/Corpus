@@ -15,6 +15,7 @@
         "HRV Heart rate variabilty" ;
     rdfs:comment 
         """HRV- Heart rate variability, standard deviation of time gaps between consecutive heartbeats (Normal-to-Normal intervals). Unit: milliseconds (ms)""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/106" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasMatrix 

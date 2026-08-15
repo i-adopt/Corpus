@@ -16,59 +16,23 @@ ex:someVar
     rdfs:comment 
         """Variance of the component of water velocity in a water body along radial lines centered at the HFR antenna, evaluated over the coverage period""" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/entity/Q5195029> ;
-    iop:hasMatrix 
-        <https://www.wikidata.org/entity/Q15324> ;
-    iop:hasContextObject 
-        <https://www.wikidata.org/entity/Q165> ;
-    iop:hasStatisticalModifier 
-        <https://www.wikidata.org/entity/Q175199> ;
+        <https://github.com/i-adopt/Corpus/blob/main/Natural%20Sciences/Oceanography/RDVA.ttl> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q11465> ;
+        <https://www.wikidata.org/entity/Q175199> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "reference: relative to instrument" ;
-             iop:constrains <https://www.wikidata.org/entity/Q11465> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "location: at the surface" ;
-             iop:constrains <https://www.wikidata.org/entity/Q15324> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "aggregation: over the temporal coverage period" ;
+             rdfs:label "temporal extent: over the coverage period" ;
              iop:constrains <https://www.wikidata.org/entity/Q175199> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "subkind: radial" ;
-             iop:constrains <https://www.wikidata.org/entity/Q11465> ;
         ] .
 
-<https://www.wikidata.org/entity/Q5195029>
+<https://github.com/i-adopt/Corpus/blob/main/Natural%20Sciences/Oceanography/RDVA.ttl>
     a 
         iop:Entity ;
     rdfs:label 
-        "water current" .
-
-<https://www.wikidata.org/entity/Q15324>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "water body" .
+        "radial velocity of water current " .
 
 <https://www.wikidata.org/entity/Q175199>
     a 
-        iop:StatisticalModifier ;
-    rdfs:label 
-        "variance" .
-
-<https://www.wikidata.org/entity/Q11465>
-    a 
         iop:Property ;
     rdfs:label 
-        "velocity" .
-
-<https://www.wikidata.org/entity/Q165>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "sea" .
+        "variance" .

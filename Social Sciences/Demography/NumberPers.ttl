@@ -26,6 +26,10 @@ ex:NumberPers
         [ a iop:Constraint ;
              rdfs:label "condition: registered as resident" ;
              iop:constrains <https://www.wikidata.org/entity/Q215627> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "normalization: per statistical unit" ;
+             iop:constrains <https://qudt.org/vocab/quantitykind/Count> ;
         ] .
 
 <https://www.wikidata.org/entity/Q215627>

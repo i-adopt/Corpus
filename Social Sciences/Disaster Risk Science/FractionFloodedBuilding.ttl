@@ -9,17 +9,17 @@
 @prefix patt: <http://example.org/iadopt/pattern> .
 
 ex:FractionFloodedBuilding
-    a 
+    a
         iop:Variable ;
-    rdfs:label 
+    rdfs:label
         "Fraction of flooded area around building" ;
-    rdfs:comment 
+    rdfs:comment
         """Fraction of flooded area above 30 cm water level within a 5 m buffer around an affected building""" ;
-    iop:hasObjectOfInterest 
+    iop:hasObjectOfInterest
         _:b0 ;
-    iop:hasProperty 
+    iop:hasProperty
         uom:AreaFraction ;
-    iop:hasConstraint 
+    iop:hasConstraint
         [ a iop:Constraint ;
              rdfs:label "condition: flooded more than 30 cm above ground" ;
              iop:constrains <https://www.wikidata.org/entity/Q702492> ;
@@ -30,32 +30,30 @@ ex:FractionFloodedBuilding
         ] .
 
 _:b0
-    a 
+    a
         iop:Entity ,
         iop:AsymmetricSystem ;
-    iop:hasNumerator 
+    iop:hasNumerator
         <https://www.wikidata.org/entity/Q702492> ;
-    iop:hasDenominator 
+    iop:hasDenominator
         _:b1 .
 
 uom:AreaFraction
-    a 
+    a
         iop:Property ;
-    rdfs:label 
+    rdfs:label
         "area fraction" .
 
 <https://www.wikidata.org/entity/Q702492>
-    a 
+    a
         iop:Entity ;
-    rdfs:label 
+    rdfs:label
         "urban area" .
 
 _:b1
-    a 
+    a
         iop:Entity ;
-    rdfs:label 
-        "surrounding area" .
-    rdfs:label 
+    rdfs:label
         "surrounding area" .
 
 <ex:FractionFloodedBuilding> <http://example.org/iadopt/issue> "https://github.com/mabablue/I-ADOPT-examples-playground/issues/90" .

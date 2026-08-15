@@ -6,6 +6,7 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
 
 ex:C4
     a 
@@ -13,10 +14,11 @@ ex:C4
     rdfs:label 
         "Atmospheric boundary layer height defined by temperature inversion" ;
     rdfs:comment 
-        """Atmospheric boundary layer height defined by temperature inversion.""" ;
+        """Atmospheric boundary layer height defined by temperature inversion, aboveground.""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/10" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q1757268> ;
-    iop:hasContextObject 
+    iop:hasMatrix 
         <https://www.wikidata.org/entity/Q8104> ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q208826> ;
@@ -34,16 +36,16 @@ ex:C4
     a 
         iop:Entity ;
     rdfs:label 
-        "planetary boundary layer" .
-
-<https://www.wikidata.org/entity/Q208826>
-    a 
-        iop:Property ;
-    rdfs:label 
-        "height" .
+        "atmospheric boundary layer" .
 
 <https://www.wikidata.org/entity/Q8104>
     a 
         iop:Entity ;
     rdfs:label 
         "atmosphere" .
+
+<https://www.wikidata.org/entity/Q208826>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "height" .

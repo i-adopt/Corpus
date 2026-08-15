@@ -23,11 +23,11 @@ ex:C28
         <http://qudt.org/vocab/quantitykind/Count> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "location: near the sea shore" ;
+             rdfs:label "vicinity: near the sea shore" ;
              iop:constrains <https://www.wikidata.org/entity/Q27686> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "type: three star" ;
+             rdfs:label "rating: three star" ;
              iop:constrains <https://www.wikidata.org/entity/Q27686> ;
         ] .
 

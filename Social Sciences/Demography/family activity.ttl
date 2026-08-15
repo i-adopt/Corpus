@@ -14,7 +14,8 @@
     rdfs:label 
         "Number of Hours of family activity per week" ;
     rdfs:comment 
-        """Number of Hours of family activity per week""" ;
+        """Number of Hours of family activity per week""" ;    
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/110" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q61788146> ;
     iop:hasMatrix 

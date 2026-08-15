@@ -3,10 +3,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
-@prefix iopp: <https://w3id.org/iadopt/pattern/> .
-@prefix patt: <http://example.org/iadopt/pattern> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
 
 ex:NumChild
     a 
@@ -14,11 +14,11 @@ ex:NumChild
     rdfs:label 
         "Number of children under the age of 10 years in a statistical unit" ;
     rdfs:comment 
-        """number of children under the age of 10 years in a statistical unit which is defined as a grouping of homogeneous neighboring building blocks""" ;
+        """number of children under the age of 10 years in a statistical unit which is defined as a grouping of homogeneous neighboring building blocks in an urban area""" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q215627> ;
-    iop:hasMatrix 
-        <https://www.wikidata.org/wiki/Q3409269> ;
+    iop:hasContextObject 
+        <https://www.wikidata.org/entity/Q702492> ;
     iop:hasProperty 
         <http://qudt.org/vocab/quantitykind/Count> ;
     iop:hasConstraint 
@@ -27,8 +27,12 @@ ex:NumChild
              iop:constrains <https://www.wikidata.org/entity/Q215627> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "defined by: grouping of homogeneous neighboring building blocks" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q3409269> ;
+             rdfs:label "normalization: per statistical unit" ;
+             iop:constrains <http://qudt.org/vocab/quantitykind/Count> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "condition: registered as residents" ;
+             iop:constrains <https://www.wikidata.org/entity/Q215627> ;
         ] .
 
 <https://www.wikidata.org/entity/Q215627>
@@ -37,14 +41,14 @@ ex:NumChild
     rdfs:label 
         "person" .
 
-<https://www.wikidata.org/wiki/Q3409269>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "statistical unit" .
-
 <http://qudt.org/vocab/quantitykind/Count>
     a 
         iop:Property ;
     rdfs:label 
         "count" .
+
+<https://www.wikidata.org/entity/Q702492>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "urban area" .

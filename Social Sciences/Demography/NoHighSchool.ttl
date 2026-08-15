@@ -30,11 +30,7 @@ ex:NoHighSchool
              iop:constrains <https://www.wikidata.org/entity/Q215627> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "temporal extent: previous three years" ;
-             iop:constrains <https://www.wikidata.org/entity/Q215627> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "condition: registered as resident in statistical unit" ;
+             rdfs:label "condition: registered as resident in statistical unit in the previous three years" ;
              iop:constrains <https://www.wikidata.org/entity/Q215627> ;
         ] ,
         [ a iop:Constraint ;

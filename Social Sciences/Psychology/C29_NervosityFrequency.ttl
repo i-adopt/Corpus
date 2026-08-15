@@ -16,7 +16,7 @@ ex:C29
     rdfs:comment 
         """In the past 30 days, how often did you feel nervous?""" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/entity/Q205555> ;
+        _:b0 ;
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q5> ;
     iop:hasProperty 
@@ -25,17 +25,13 @@ ex:C29
         [ a iop:Constraint ;
              rdfs:label "normalization: during last 30 days" ;
              iop:constrains <https://qudt.org/vocab/quantitykind/Count> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "mental state: nervousness" ;
-             iop:constrains <https://www.wikidata.org/entity/Q205555> ;
         ] .
 
-<https://www.wikidata.org/entity/Q205555>
+_:b0
     a 
         iop:Entity ;
     rdfs:label 
-        "feeling" .
+        "nevous feeling" .
 
 <https://www.wikidata.org/entity/Q5>
     a 

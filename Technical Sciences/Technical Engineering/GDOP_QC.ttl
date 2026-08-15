@@ -15,6 +15,7 @@ ex:Variable
         "Geometric dilution of precision (GDOP) threshold quality flag " ;
     rdfs:comment 
         """Quality Control flags resulting from setting a threshold on Geometric dilution of precision (GDOP). Setting a threshold on GDOP for total combination avoids the combination of radials with an intersection angle below a certain value.""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/50" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q616896> ;
     iop:hasProperty 

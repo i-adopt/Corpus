@@ -15,6 +15,7 @@ ex:C28
         "Overnight stays in 3-star hotel near the sea shore" ;
     rdfs:comment 
         """Number of nights in a 3-star hotel near the sea shore""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/34" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q575> ;
     iop:hasMatrix 

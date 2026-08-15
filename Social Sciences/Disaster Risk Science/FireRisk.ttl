@@ -7,13 +7,15 @@
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
+
 <http://example.org/iadopt/SS/DRS/firerisk>
     a 
         iop:Variable ;
     rdfs:label 
         "Fire risk per district" ;
     rdfs:comment 
-        """Fire risk per district""" ;
+        """Fire risk in urban areas per district.""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/169" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q104493> ;
     iop:hasMatrix 
@@ -47,4 +49,3 @@
         iop:Property ;
     rdfs:label 
         "index" .
-<http://example.org/iadopt/SS/DRS/firerisk> <http://example.org/iadopt/issue> "https://github.com/mabablue/I-ADOPT-examples-playground/issues/169" .

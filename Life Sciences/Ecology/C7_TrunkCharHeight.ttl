@@ -29,7 +29,7 @@ ex:C7
              iop:constrains <https://qudt.org/vocab/quantitykind/Height> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "event: fire" ;
+             rdfs:label "cause: fire" ;
              iop:constrains <https://www.wikidata.org/entity/Q11567121> ;
         ] .
 

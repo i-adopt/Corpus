@@ -15,6 +15,7 @@
         "Number of floors above ground of building" ;
     rdfs:comment 
         """Number of floors above ground of building""" ;
+   ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/165" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q831691> ;
     iop:hasMatrix 

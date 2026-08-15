@@ -18,12 +18,12 @@
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q831691> ;
     iop:hasMatrix 
-        <https://www.wikidata.org/wiki/Q41176> ;
+        <https://www.wikidata.org/entity/Q41176> ;
     iop:hasProperty 
         <http://qudt.org/vocab/quantitykind/Count> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "reference: aboveground" ;
+             rdfs:label "reference: above ground" ;
              iop:constrains <https://www.wikidata.org/entity/Q831691> ;
         ] .
 
@@ -33,7 +33,7 @@
     rdfs:label 
         "storey" .
 
-<https://www.wikidata.org/wiki/Q41176>
+<https://www.wikidata.org/entity/Q41176>
     a 
         iop:Entity ;
     rdfs:label 

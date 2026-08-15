@@ -3,10 +3,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
-@prefix iopp: <https://w3id.org/iadopt/pattern/> .
-@prefix patt: <http://example.org/iadopt/pattern> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
 
 <http://example.org/iadopt/clinical/HRV>
     a 
@@ -14,21 +14,26 @@
     rdfs:label 
         "HRV Heart rate variabilty" ;
     rdfs:comment 
-        """HRV- Heart rate variability, standard deviation of time gaps between consecutive heartbeats (called R-R intervals). Unit: milliseconds (ms)""" ;
+        """HRV- Heart rate variability, standard deviation of time gaps between consecutive heartbeats (Normal-to-Normal intervals). Unit: milliseconds (ms)""" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/entity/Q1072> ;
+        _:b0 ;
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q5> ;
     iop:hasStatisticalModifier 
         <https://www.wikidata.org/entity/Q175199> ;
     iop:hasProperty 
-        <https://qudt.org/vocab/quantitykind/HeartRate> .
+        <https://qudt.org/vocab/quantitykind/Time> ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "part: normal-to-normal" ;
+             iop:constrains _:b0 ;
+        ] .
 
-<https://www.wikidata.org/entity/Q1072>
+_:b0
     a 
         iop:Entity ;
     rdfs:label 
-        "heart" .
+        "cardiac interbeat interval" .
 
 <https://www.wikidata.org/entity/Q5>
     a 
@@ -42,8 +47,8 @@
     rdfs:label 
         "standard deviation" .
 
-<https://qudt.org/vocab/quantitykind/HeartRate>
+<https://qudt.org/vocab/quantitykind/Time>
     a 
         iop:Property ;
     rdfs:label 
-        "heart rate" .
+        "time" .

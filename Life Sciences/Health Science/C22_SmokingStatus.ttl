@@ -15,6 +15,7 @@ ex:C22
         "Current smoking status" ;
     rdfs:comment 
         """Smoking status current of a patient""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/28" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q662860> ;
     iop:hasMatrix 

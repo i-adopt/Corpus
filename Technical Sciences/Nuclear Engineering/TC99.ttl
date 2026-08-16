@@ -15,6 +15,7 @@
         "Radioactivity_content_of_TC99SF" ;
     rdfs:comment 
         """Radioactivity content of Technetium-99 in sea water from discharges of the nuclear fuel reprocessing plant at Sellafield, UK. Technetium-99 is a radioactive isotope of element Technetium, with a half-life of about 211k years. Units: Becquerel per kilogram (Bq kg-1).""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/164" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasContextObject 

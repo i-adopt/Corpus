@@ -3,26 +3,25 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/> .
-@prefix iopp: <https://w3id.org/iadopt/pattern/> .
-@prefix patt: <http://example.org/iadopt/pattern> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
 
 ex:SulfateAerosol
     a 
         iop:Variable ;
     rdfs:label 
         "Sulfate organic nitrate in aerosol particles" ;
-    skos:definition """Number fraction of aerosol particles from 0.1 um to larger than 1 um that are identified as suflate-organic-nitrate internal mixtures.""" ;
     rdfs:comment 
-        """Number fraction -> ratio; aerosol; particle; size:0.1 um to larger than 1 um ; sulfate-organic-nitrate internal mixture; ADD: particl mixture; quantity: total.""" ;
-ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/101" ;
+        """Number fraction of aerosol particles from 0.1 µm to 1 µm that are identified as suflate-organic-nitrate internal mixtures.""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/101" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q104541> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q3481047> ;
+        <https://www.wikidata.org/entity/Q19828502> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "composition: mixture of sulfate-organic-nitrate " ;
@@ -33,8 +32,8 @@ ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/101" ;
              iop:constrains _:b1 ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "size: 0.1 µm to larger than 1 µm" ;
-             iop:constrains _:b0 ;
+             rdfs:label "diameter: 0.1 - 1 µm" ;
+             iop:constrains <https://www.wikidata.org/entity/Q1621273> ;
         ] .
 
 _:b0
@@ -52,11 +51,11 @@ _:b0
     rdfs:label 
         "aerosol" .
 
-<https://www.wikidata.org/entity/Q3481047>
+<https://www.wikidata.org/entity/Q19828502>
     a 
         iop:Property ;
     rdfs:label 
-        "ratio" .
+        "particle number fraction" .
 
 _:b1
     a 

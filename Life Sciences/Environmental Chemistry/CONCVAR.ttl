@@ -15,6 +15,7 @@ ex:someVar
         "Determination of iron concentration in a soil sample" ;
     rdfs:comment 
         """Determination of iron concentration in a soil sample by colorimetric analysis using ortho-phenanthroline as mass fraction""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/80" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 

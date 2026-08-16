@@ -15,15 +15,24 @@
         "Level of highest education" ;
     rdfs:comment 
         """level of highest education""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/111" ;
     iop:hasObjectOfInterest 
+        <https://www.wikidata.org/entity/Q8434> ;
+    iop:hasMatrix 
         <https://www.wikidata.org/entity/Q5> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q18189> ;
+        <http://purl.jp/bio/4/id/200906065003062504> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "criteria: highest" ;
-             iop:constrains <https://www.wikidata.org/entity/Q18189> ;
+             iop:constrains <http://purl.jp/bio/4/id/200906065003062504> ;
         ] .
+
+<https://www.wikidata.org/entity/Q8434>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "education" .
 
 <https://www.wikidata.org/entity/Q5>
     a 
@@ -31,8 +40,8 @@
     rdfs:label 
         "person" .
 
-<https://www.wikidata.org/entity/Q18189>
+<http://purl.jp/bio/4/id/200906065003062504>
     a 
         iop:Property ;
     rdfs:label 
-        "educational stage" .
+        "degree" .

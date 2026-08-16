@@ -15,6 +15,7 @@
         "Partial Solar Obscuration" ;
     rdfs:comment 
         """Partial Solar Obscuration in percentage""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/171" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasMatrix 

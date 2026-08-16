@@ -16,12 +16,12 @@
     rdfs:comment 
         """Type of blood in a blood sample""" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/117" ;
-    iop:hasObjectOfInterest 
+   iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q7873> ;
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q5> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q3707858> .
+        <https://www.wikidata.org/entity/Q104053> .
 
 <https://www.wikidata.org/entity/Q7873>
     a 
@@ -35,8 +35,8 @@
     rdfs:label 
         "person" .
 
-<https://www.wikidata.org/entity/Q3707858>
+<https://www.wikidata.org/entity/Q104053>
     a 
         iop:Property ;
     rdfs:label 
-        "type" .
+        "phenotype" .

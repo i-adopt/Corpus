@@ -15,6 +15,7 @@ ex:EC1
         "concentration of endosulfane sulfate in wet flesh of ostrea edulis" ;
     rdfs:comment 
         """Mass concentration of endosulfane sulfate in wet flesh of ostrea edulis, measured in μg/kg.""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/89" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasMatrix 

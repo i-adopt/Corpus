@@ -15,6 +15,7 @@
         "Mass ratio of dehp in nail" ;
     rdfs:comment 
         """Mass ratio of dehp in nail, measured for a person.""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/126" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasMatrix 

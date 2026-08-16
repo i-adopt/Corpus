@@ -15,18 +15,19 @@ ex:Circulation-Mode-in-Pipe
         "Circulation-Mode-in-Pipe" ;
     rdfs:comment 
         """Circulation mode (gravity, forced, ...) of water in canalisation pipe""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/2" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/entity/Q283> ;
+        <https://www.wikidata.org/entity/Q11781111> ;
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q336169> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q140911832> .
+        <https://www.wikidata.org/entity/Q3707858> .
 
-<https://www.wikidata.org/entity/Q283>
+<https://www.wikidata.org/entity/Q11781111>
     a 
         iop:Entity ;
     rdfs:label 
-        "water" .
+        "water circulation" .
 
 <https://www.wikidata.org/entity/Q336169>
     a 
@@ -34,8 +35,8 @@ ex:Circulation-Mode-in-Pipe
     rdfs:label 
         "sewer line" .
 
-<https://www.wikidata.org/entity/Q140911832>
+<https://www.wikidata.org/entity/Q3707858>
     a 
         iop:Property ;
     rdfs:label 
-        "fluid circulation mode" .
+        "type" .

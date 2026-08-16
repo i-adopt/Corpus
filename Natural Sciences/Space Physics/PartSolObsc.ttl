@@ -16,12 +16,12 @@
     rdfs:comment 
         """Partial Solar Obscuration in percentage""" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/171" ;
-    iop:hasObjectOfInterest 
+   iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q525> ;
     iop:hasProperty 
-        <https://qudt.org/vocab/quantitykind/Ratio> ;
+        uom:AreaFraction ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "process: eclipse" ;
@@ -43,11 +43,11 @@ _:b0
     rdfs:label 
         "sun" .
 
-<https://qudt.org/vocab/quantitykind/Ratio>
+uom:AreaFraction
     a 
         iop:Property ;
     rdfs:label 
-        "ratio" .
+        "area fraction" .
 
 _:b1
     a 
@@ -60,5 +60,3 @@ _:b2
         iop:Entity ;
     rdfs:label 
         "total area" .
-
-<http://example.org/iadopt/NS/SP/solarobs> <http://example.org/iadopt/issue> "https://github.com/mabablue/I-ADOPT-examples-playground/issues/171" .

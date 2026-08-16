@@ -15,32 +15,33 @@
         "Chronic pain grade scale" ;
     rdfs:comment 
         """Category: Clinical, Unit: descriptional/grade of a scale""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/108" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/wiki/Q81938> ;
+        <https://www.wikidata.org/entity/Q81938> ;
     iop:hasMatrix 
-        <https://www.wikidata.org/wiki/Q5> ;
+        <https://www.wikidata.org/entity/Q5> ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q18185> ;
+        <http://purl.jp/bio/4/id/200906065003062504> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "temporal extent: chronic" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q81938> ;
+             iop:constrains <https://www.wikidata.org/entity/Q81938> ;
         ] .
 
-<https://www.wikidata.org/wiki/Q81938>
+<https://www.wikidata.org/entity/Q81938>
     a 
         iop:Entity ;
     rdfs:label 
         "pain" .
 
-<https://www.wikidata.org/wiki/Q5>
+<https://www.wikidata.org/entity/Q5>
     a 
         iop:Entity ;
     rdfs:label 
         "person" .
 
-<https://www.wikidata.org/wiki/Q18185>
+<http://purl.jp/bio/4/id/200906065003062504>
     a 
         iop:Property ;
     rdfs:label 
-        "grade" .
+        "degree" .

@@ -15,6 +15,7 @@
         "Social Vulnerability to pluvial floods of the residents" ;
     rdfs:comment 
         """Social Vulnerability to pluvial floods of the residents""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/167" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q581445> ;
     iop:hasMatrix 

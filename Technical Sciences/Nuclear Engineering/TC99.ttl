@@ -16,10 +16,8 @@
     rdfs:comment 
         """Radioactivity content of Technetium-99 in sea water from discharges of the nuclear fuel reprocessing plant at Sellafield, UK. Technetium-99 is a radioactive isotope of element Technetium, with a half-life of about 211k years. Units: Becquerel per kilogram (Bq kg-1).""" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/164" ;
-    iop:hasObjectOfInterest 
+  iop:hasObjectOfInterest 
         _:b0 ;
-    iop:hasContextObject 
-        <https://www.wikidata.org/entity/Q117750525> ;
     iop:hasProperty 
         <http://qudt.org/vocab/quantitykind/MassicActivity> .
 
@@ -30,7 +28,7 @@ _:b0
     iop:hasNumerator 
         <https://www.wikidata.org/entity/Q1961418> ;
     iop:hasDenominator 
-        <https://www.wikidata.org/entity/Q283> .
+        <https://www.wikidata.org/entity/Q184395> .
 
 <http://qudt.org/vocab/quantitykind/MassicActivity>
     a 
@@ -38,20 +36,14 @@ _:b0
     rdfs:label 
         "Massic Activity" .
 
-<https://www.wikidata.org/entity/Q117750525>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "marine environment" .
-
 <https://www.wikidata.org/entity/Q1961418>
     a 
         iop:Entity ;
     rdfs:label 
         "Technetium-99" .
 
-<https://www.wikidata.org/entity/Q283>
+<https://www.wikidata.org/entity/Q184395>
     a 
         iop:Entity ;
     rdfs:label 
-        "water" .
+        "sea water" .

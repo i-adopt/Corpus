@@ -15,6 +15,7 @@
         "Heat stress index" ;
     rdfs:comment 
         """Heat stress index per district""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/170" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q123414> ;
     iop:hasMatrix 

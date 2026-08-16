@@ -14,7 +14,7 @@
     rdfs:label 
         "Mass ratio of dehp in nail" ;
     rdfs:comment 
-        """Mass ratio of dehp in nail""" ;
+        """Mass ratio of dehp in nail, measured for a person.""" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasMatrix 

@@ -15,27 +15,24 @@ ex:C15
         "Foraminifera, planktic, size" ;
     rdfs:comment 
         """Size of planktic foraminifers in surface sediments, see https://doi.pangaea.de/10.1594/PANGAEA.126730""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/21" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/entity/Q107027> ;
+        <http://purl.jp/bio/4/id/200906037915220948> ;
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q180184> ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q322481> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "subkind: planktonic" ;
-             iop:constrains <https://www.wikidata.org/entity/Q107027> ;
-        ] ,
-        [ a iop:Constraint ;
              rdfs:label "part: surface" ;
              iop:constrains <https://www.wikidata.org/entity/Q180184> ;
         ] .
 
-<https://www.wikidata.org/entity/Q107027>
+<http://purl.jp/bio/4/id/200906037915220948>
     a 
         iop:Entity ;
     rdfs:label 
-        "foraminifera" .
+        "planctonic foraminifera" .
 
 <https://www.wikidata.org/entity/Q180184>
     a 

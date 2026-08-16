@@ -15,6 +15,7 @@
         "Blood lactate concentration" ;
     rdfs:comment 
         """Blood lactate concentration at lactate tolerance threshold measured in mmol/l""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/168" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasMatrix 

@@ -15,7 +15,7 @@
         "Primary function of building" ;
     rdfs:comment
         """Primary function of building""" ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/165" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/166" ;
     iop:hasObjectOfInterest
         <https://www.wikidata.org/entity/Q41176> ;
     iop:hasProperty

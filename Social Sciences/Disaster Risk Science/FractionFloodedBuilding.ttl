@@ -16,7 +16,6 @@ ex:FractionFloodedBuilding
     rdfs:comment 
         """Fraction of flooded area above 30 cm water level within a 5 m buffer around an affected building in an urban area""" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/90" ;
-        """Fraction of flooded area above 30 cm water level within a 5 m buffer around an affected building in an urban area""" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasContextObject 

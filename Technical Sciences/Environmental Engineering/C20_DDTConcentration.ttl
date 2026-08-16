@@ -15,15 +15,14 @@ ex:C20
         "Concentration of DDT impacted by industry" ;
     rdfs:comment 
         """Concentration of DDT in a given year at a site impacted by industry, measured in ng/g.""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/26" ;
     iop:hasObjectOfInterest 
         _:b0 ;
-    iop:hasContextObject 
-        <https://www.wikidata.org/entity/Q57951700> ;
     iop:hasProperty 
         <https://qudt.org/vocab/quantitykind/MassFraction> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "origin: industry" ;
+             rdfs:label "source: industry" ;
              iop:constrains <https://www.wikidata.org/entity/Q163648> ;
         ] .
 
@@ -41,12 +40,6 @@ _:b0
         iop:Property ;
     rdfs:label 
         "mass fraction" .
-
-<https://www.wikidata.org/entity/Q57951700>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "research site" .
 
 <https://www.wikidata.org/entity/Q163648>
     a 

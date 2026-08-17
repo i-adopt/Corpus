@@ -4,6 +4,8 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/HFR> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
 
 ex:RadVelErrHF
@@ -11,56 +13,30 @@ ex:RadVelErrHF
         iop:Variable ;
     rdfs:label 
         "RDVA Radial velocity (away from) of water current relative to instrument in the water body by High Frequency Radar" ;
-    skos:definition 
+    rdfs:comment 
         """Component of the sea surface current velocity that is directed toward (negative values) or away from (positive values) the High Frequency Radar (HFR) antenna, measured along the lines of sights of the antenna, i.e. along radial lines centered at the HFR antenna.""" ;
-    rdfs:comment "water current, water body, at the surface, sea, velocity, relative to instrument, positive away from the instrument, radial" ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/61" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/entity/Q5195029> ;
-    iop:hasMatrix 
-        <https://www.wikidata.org/entity/Q15324> ;
-    iop:hasContextObject 
-        <https://www.wikidata.org/entity/Q165> ;
+        <https://www.wikidata.org/entity/Q184395> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q11465> ;
+        _:b0 ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "reference: relative to instrument" ;
-             iop:constrains <https://www.wikidata.org/entity/Q11465> ;
+             iop:constrains _:b0 ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "location: at the surface" ;
-             iop:constrains <https://www.wikidata.org/entity/Q15324> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "interpretation: positive away from the instrument" ;
-             iop:constrains <https://www.wikidata.org/entity/Q11465> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "subkind: radial" ;
-             iop:constrains <https://www.wikidata.org/entity/Q11465> ;
+             rdfs:label "part: surface level" ;
+             iop:constrains <https://www.wikidata.org/entity/Q184395> ;
         ] .
 
-<https://www.wikidata.org/entity/Q5195029>
+<https://www.wikidata.org/entity/Q184395>
     a 
         iop:Entity ;
     rdfs:label 
-        "water current" .
+        "sea water " .
 
-<https://www.wikidata.org/entity/Q15324>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "water body" .
-
-<https://www.wikidata.org/entity/Q11465>
+_:b0
     a 
         iop:Property ;
     rdfs:label 
-        "velocity" .
-
-<https://www.wikidata.org/entity/Q165>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "sea" .
+        "radial velocity" .

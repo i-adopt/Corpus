@@ -3,9 +3,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
-@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
 
 <http://example.org/iadopt/env/ConcCarbon>
@@ -22,11 +22,7 @@
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "state: dissolved" ;
-             iop:constrains <https://www.wikidata.org/entity/Q623> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "subkind: organic" ;
-             iop:constrains <https://www.wikidata.org/entity/Q623> ;
+             iop:constrains <http://vocabs.lter-europe.net/EnvThes/20813> ;
         ] .
 
 _:b0
@@ -36,7 +32,7 @@ _:b0
     iop:hasDenominator 
         <https://www.wikidata.org/entity/Q283> ;
     iop:hasNumerator 
-        <https://www.wikidata.org/entity/Q623> .
+        <http://vocabs.lter-europe.net/EnvThes/20813> .
 
 <https://qudt.org/vocab/quantitykind/MassConcentration>
     a 
@@ -50,8 +46,8 @@ _:b0
     rdfs:label 
         "water" .
 
-<https://www.wikidata.org/entity/Q623>
+<http://vocabs.lter-europe.net/EnvThes/20813>
     a 
         iop:Entity ;
     rdfs:label 
-        "carbon" .
+        "organic carbon" .

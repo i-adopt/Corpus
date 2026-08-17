@@ -4,9 +4,9 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
-@prefix patt: <http://example.org/iadopt/pattern> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
 
 ex:C16
     a 
@@ -18,7 +18,7 @@ ex:C16
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q5203615> ;
     iop:hasMatrix 
-        <https://www.wikidata.org/entity/Q7239> ;
+        _:b0 ;
     iop:hasProperty 
         <https://qudt.org/vocab/quantitykind/Mass> ;
     iop:hasConstraint 
@@ -27,16 +27,12 @@ ex:C16
              iop:constrains <https://qudt.org/vocab/quantitykind/Mass> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "subkind: ectotherm" ;
-             iop:constrains <https://www.wikidata.org/entity/Q7239> ;
-        ] ,
-        [ a iop:Constraint ;
              rdfs:label "state: inactive" ;
-             iop:constrains <https://www.wikidata.org/entity/Q7239> ;
+             iop:constrains _:b0 ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "state: unstressed" ;
-             iop:constrains <https://www.wikidata.org/entity/Q7239> ;
+             iop:constrains _:b0 ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "process: metabolism" ;
@@ -49,11 +45,11 @@ ex:C16
     rdfs:label 
         "oxygen" .
 
-<https://www.wikidata.org/entity/Q7239>
+_:b0
     a 
         iop:Entity ;
     rdfs:label 
-        "organism" .
+        "ectotherm organism" .
 
 <https://qudt.org/vocab/quantitykind/Mass>
     a 

@@ -4,6 +4,8 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/HFR> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
 
 <http://example.org/iadopt/ETMP>
@@ -11,53 +13,33 @@
         iop:Variable ;
     rdfs:label 
         "Radial velocity (away from) standard deviation over the coverage period of water current relative to instrument in the water body by high frequency radar" ;
-    skos:definition 
+    rdfs:comment 
         """Standard deviation of the component of water velocity in a water body along radial lines centered at the HFR antenna, evaluated over the coverage period""" ;
-    rdfs:comment "water current; water body; at the sea surface; standard deviation; over the temporal coverage period; sea; velocity; relative to instrument; positive away from the instrument; radial" ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/63" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/entity/Q5195029> ;
-    iop:hasMatrix 
-        <https://www.wikidata.org/entity/Q15324> ;
-    iop:hasContextObject 
-        <https://www.wikidata.org/entity/Q165> ;
+        <https://www.wikidata.org/entity/Q184395> ;
     iop:hasStatisticalModifier 
         <https://www.wikidata.org/entity/Q159375> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q11465> ;
+        _:b0 ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "reference: relative to instrument" ;
-             iop:constrains <https://www.wikidata.org/entity/Q11465> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "location: at the sea surface" ;
-             iop:constrains <https://www.wikidata.org/entity/Q15324> ;
+             iop:constrains _:b0 ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "temporal extent: over the temporal coverage period" ;
              iop:constrains <https://www.wikidata.org/entity/Q159375> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "interpretation: positive away from the instrument" ;
-             iop:constrains <https://www.wikidata.org/entity/Q11465> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "subkind: radial" ;
-             iop:constrains <https://www.wikidata.org/entity/Q11465> ;
+             rdfs:label "part: surface level" ;
+             iop:constrains <https://www.wikidata.org/entity/Q184395> ;
         ] .
 
-<https://www.wikidata.org/entity/Q5195029>
+<https://www.wikidata.org/entity/Q184395>
     a 
         iop:Entity ;
     rdfs:label 
-        "water current" .
-
-<https://www.wikidata.org/entity/Q15324>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "water body" .
+        "sea water" .
 
 <https://www.wikidata.org/entity/Q159375>
     a 
@@ -65,14 +47,8 @@
     rdfs:label 
         "standard deviation" .
 
-<https://www.wikidata.org/entity/Q11465>
+_:b0
     a 
         iop:Property ;
     rdfs:label 
-        "velocity" .
-
-<https://www.wikidata.org/entity/Q165>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "sea" .
+        "radial velocity" .

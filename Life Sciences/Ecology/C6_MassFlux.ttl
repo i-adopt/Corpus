@@ -15,6 +15,7 @@ ex:C6
         "Mass flux of carbon into soil from vegetation due to senescence" ;
     rdfs:comment 
         """Mass flux of carbon into soil from vegetation due to senescence, measured in kg m-2 s-1. """ ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/12" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q623> ;
     iop:hasMatrix 

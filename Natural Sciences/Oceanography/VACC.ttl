@@ -3,9 +3,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
-@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
 
 ex:
@@ -15,11 +15,8 @@ ex:
         "Northward velocity uncertainty of water current in the water body by high frequency radar" ;
     rdfs:comment 
         """Uncertainty expressed using confidence interval of the component of the sea surface current velocity that is directed northward.""" ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/43" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/entity/Q283> ;
-    iop:hasMatrix 
-        <http://purl.obolibrary.org/obo/ENVO_01000320> ;
+        <https://www.wikidata.org/entity/Q184395> ;
     iop:hasStatisticalModifier 
         <https://www.wikidata.org/wiki/Q208498> ;
     iop:hasProperty 
@@ -31,20 +28,14 @@ ex:
         ] ,
         [ a iop:Constraint ;
              rdfs:label "part: surface level" ;
-             iop:constrains <https://www.wikidata.org/entity/Q283> ;
+             iop:constrains <https://www.wikidata.org/entity/Q184395> ;
         ] .
 
-<https://www.wikidata.org/entity/Q283>
+<https://www.wikidata.org/entity/Q184395>
     a 
         iop:Entity ;
     rdfs:label 
-        "water" .
-
-<http://purl.obolibrary.org/obo/ENVO_01000320>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "marine environment" .
+        "sea water" .
 
 <https://www.wikidata.org/wiki/Q208498>
     a 

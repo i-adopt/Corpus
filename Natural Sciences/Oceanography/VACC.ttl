@@ -16,35 +16,18 @@ ex:
     rdfs:comment 
         """Uncertainty expressed using confidence interval of the component of the sea surface current velocity that is directed northward.""" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/entity/Q184395> ;
-    iop:hasStatisticalModifier 
-        <https://www.wikidata.org/wiki/Q208498> ;
+        _:b0 ;
     iop:hasProperty 
-        <https://qudt.org/vocab/quantitykind/LinearVelocity> ;
-    iop:hasConstraint 
-        [ a iop:Constraint ;
-             rdfs:label "direction: northward" ;
-             iop:constrains <https://qudt.org/vocab/quantitykind/LinearVelocity> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "part: surface level" ;
-             iop:constrains <https://www.wikidata.org/entity/Q184395> ;
-        ] .
+        <https://www.wikidata.org/entity/Q208498> .
 
-<https://www.wikidata.org/entity/Q184395>
+_:b0
     a 
         iop:Entity ;
     rdfs:label 
-        "sea water" .
+        "northward linear velocity of water" .
 
-<https://www.wikidata.org/wiki/Q208498>
-    a 
-        iop:StatisticalModifier ;
-    rdfs:label 
-        "confidence interval" .
-
-<https://qudt.org/vocab/quantitykind/LinearVelocity>
+<https://www.wikidata.org/entity/Q208498>
     a 
         iop:Property ;
     rdfs:label 
-        "linear velocity" .
+        "confidence interval" .

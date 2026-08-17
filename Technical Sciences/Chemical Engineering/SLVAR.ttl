@@ -4,25 +4,25 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
 
 ex:slvar
     a 
         iop:Variable ;
     rdfs:label 
         "solubility of naphthalene in water at room temperature" ;
-    skos:definition 
-        """solubility measurement of napathalene in deionized water at room temperature by monitoring absorption at 279 nm, measured in mg/L""" ;
     rdfs:comment 
-        """napathalene; deionized; water; at room temperature; ADD: state:dissolved, quality: deionized""" ;
-  ex:issue "https://github.com/mabablue/I-ADOPT-Variables/blob/d1f1a3b56a1ad46698260397e6fa66ef206ec7d3/Chemistry/SLVAR.ttl" ;
+        """solubility measurement of napathalene in deionized water at room temperature by monitoring absorption at 279 nm, measured in mg/L""" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q589446> ;
+        <https://qudt.org/vocab/quantitykind/MassConcentration> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "condition: at room temperature" ;
-             iop:constrains <https://www.wikidata.org/entity/Q589446> ;
+             iop:constrains <https://qudt.org/vocab/quantitykind/MassConcentration> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "state: dissolved" ;
@@ -42,7 +42,7 @@ _:b0
     iop:hasDenominator 
         <https://www.wikidata.org/entity/Q283> .
 
-<https://www.wikidata.org/entity/Q589446>
+<https://qudt.org/vocab/quantitykind/MassConcentration>
     a 
         iop:Property ;
     rdfs:label 

@@ -15,6 +15,7 @@ ex:llvar
         "solubility of benzene in water" ;
     rdfs:comment 
         """solubility (g/L) of 99.82 (w/w) pure benzene in deionized water at phase equilibrium and 298.15 K""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/83" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 

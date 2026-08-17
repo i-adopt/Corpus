@@ -18,17 +18,20 @@
 Units: atoms kg-1""" ;
     iop:hasObjectOfInterest 
         _:b0 ;
-    iop:hasContextObject 
-        <https://www.wikidata.org/entity/Q117750525> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q139568528> .
+        <https://www.wikidata.org/entity/Q139568528> ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "source: nuclear fuel reprocessing plant La Hague, France" ;
+             iop:constrains <https://www.wikidata.org/entity/Q5955496> ;
+        ] .
 
 _:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
     iop:hasDenominator 
-        <https://www.wikidata.org/entity/Q283> ;
+        <https://www.wikidata.org/entity/Q184395> ;
     iop:hasNumerator 
         <https://www.wikidata.org/entity/Q5955496> .
 
@@ -38,17 +41,11 @@ _:b0
     rdfs:label 
         "number density per unit mass" .
 
-<https://www.wikidata.org/entity/Q117750525>
+<https://www.wikidata.org/entity/Q184395>
     a 
         iop:Entity ;
     rdfs:label 
-        "marine environment" .
-
-<https://www.wikidata.org/entity/Q283>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "water" .
+        "sea water" .
 
 <https://www.wikidata.org/entity/Q5955496>
     a 

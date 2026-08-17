@@ -17,20 +17,16 @@
         """Number of I129 atoms per mass  of sea water in the artic from discharges  of the nuclear fuel reprocessing plant at Ringhals of Sweden (I129se40) in atoms kg-1""" ;
     ex:issue
         "https://github.com/mabablue/I-ADOPT-examples-playground/issues/135" ;
+    rdfs:comment 
+        """Number of I129 atoms per mass  of sea water in the artic from discharges  of the nuclear fuel reprocessing plant at Ringhals of Sweden (I129se40) in atoms kg-1""" ;
     iop:hasObjectOfInterest 
         _:b0 ;
-    iop:hasMatrix 
-        <https://www.wikidata.org/entity/Q788> ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q139568528> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "source: from discharges of the nuclear fuel reprocessing plant at Ringhals, Sweden" ;
+             rdfs:label "source: nuclear fuel reprocessing plant at Ringhals, Sweden" ;
              iop:constrains <https://www.wikidata.org/entity/Q2515411> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "subkind: sea water" ;
-             iop:constrains <https://www.wikidata.org/entity/Q283> ;
         ] .
 
 _:b0
@@ -40,13 +36,7 @@ _:b0
     iop:hasNumerator 
         <https://www.wikidata.org/entity/Q2515411> ;
     iop:hasDenominator 
-        <https://www.wikidata.org/entity/Q283> .
-
-<https://www.wikidata.org/entity/Q788>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "artic ocean" .
+        <https://www.wikidata.org/entity/Q184395> .
 
 <https://www.wikidata.org/entity/Q139568528>
     a 
@@ -60,8 +50,8 @@ _:b0
     rdfs:label 
         "Iodine-129" .
 
-<https://www.wikidata.org/entity/Q283>
+<https://www.wikidata.org/entity/Q184395>
     a 
         iop:Entity ;
     rdfs:label 
-        "water" .
+        "sea water" .

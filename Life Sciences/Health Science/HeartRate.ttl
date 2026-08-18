@@ -17,24 +17,24 @@ ex:heartrate
         """SJC: property changed to hearbeat; add normalization 'per minute'""" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/105" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/entity/Q1072> ;
+        <http://purl.bioontology.org/ontology/RCD/X76JX> ;
     iop:hasMatrix 
         <hhttps://www.wikidata.org/entity/Q5> ;
     iop:hasStatisticalModifier 
         <https://www.wikidata.org/entity/Q2796622> ;
     iop:hasProperty 
-        <https://qudt.org/vocab/quantitykind/HeartRate> ;
+        <https://qudt.org/vocab/quantitykind/Count> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "normalization: per minute" ;
-             iop:constrains <https://qudt.org/vocab/quantitykind/HeartRate> ;
+             iop:constrains <https://qudt.org/vocab/quantitykind/Count> ;
         ] .
 
-<https://www.wikidata.org/entity/Q1072>
+<http://purl.bioontology.org/ontology/RCD/X76JX>
     a 
         iop:Entity ;
     rdfs:label 
-        "heart" .
+        "heart beat" .
 
 <hhttps://www.wikidata.org/entity/Q5>
     a 
@@ -48,8 +48,8 @@ ex:heartrate
     rdfs:label 
         "mean" .
 
-<https://qudt.org/vocab/quantitykind/HeartRate>
+<https://qudt.org/vocab/quantitykind/Count>
     a 
         iop:Property ;
     rdfs:label 
-        "hear rate" .
+        "count" .

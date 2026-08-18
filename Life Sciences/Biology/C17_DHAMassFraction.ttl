@@ -15,8 +15,7 @@ ex:C17
         "Docosahexaenoic acid content per dry weight (DHA content/ C22:6 n-3 content)" ;
     rdfs:comment 
         """The amount of docosahexaenoic acid relative to dry weight in an organism.""" ;
-    ex:issue
-        "https://github.com/mabablue/I-ADOPT-examples-playground/issues/23" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/23" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 

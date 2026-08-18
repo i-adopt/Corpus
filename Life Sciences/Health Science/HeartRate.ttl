@@ -14,7 +14,7 @@ ex:heartrate
     rdfs:label 
         "BPM Mean heart rate" ;
     rdfs:comment 
-        """SJC: property changed to hearbeat; add normalization 'per minute'""" ;
+        """mean heart rate, beats per minute (ECG-derived)""" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/105" ;
     iop:hasObjectOfInterest 
         <http://purl.bioontology.org/ontology/RCD/X76JX> ;

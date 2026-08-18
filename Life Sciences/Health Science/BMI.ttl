@@ -15,8 +15,7 @@
         "Body Mass Index" ;
     rdfs:comment 
         """Body mass index calculated by dividing body mass by height squared""" ;
-    ex:issue
-        "https://github.com/mabablue/I-ADOPT-examples-playground/issues/107" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/107" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q5> ;
     iop:hasProperty 

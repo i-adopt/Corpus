@@ -15,8 +15,7 @@ ex:C10
         "Peak ground acceleration" ;
     rdfs:comment 
         """Peak acceleration measured on the earth surface when facing seismic events, like earthquakes.""" ;
-    ex:issue
-        "https://github.com/mabablue/I-ADOPT-examples-playground/issues/16" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/16" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q36133> ;
     iop:hasMatrix 

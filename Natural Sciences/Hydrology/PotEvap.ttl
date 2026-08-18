@@ -15,8 +15,7 @@
         "Potential evaporation" ;
     rdfs:comment 
         """Potential evaporation l m⁻² s⁻¹""" ;
-    ex:issue
-        "https://github.com/mabablue/I-ADOPT-examples-playground/issues/125" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/125" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q190120> ;
     iop:hasMatrix 

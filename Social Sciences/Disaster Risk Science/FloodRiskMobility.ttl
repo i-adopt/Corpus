@@ -15,6 +15,7 @@ ex:FloodRiskMobility
         "Flood risk index related to mobility and accessibility of an urban area" ;
     rdfs:comment 
         """Flood risk index related to mobility and accessibility when streets around the houses are flooded""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/98" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q702492> ;
     iop:hasProperty 

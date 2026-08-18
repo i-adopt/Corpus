@@ -15,8 +15,7 @@
         "I129 deposition from Ringhals of Sweden" ;
     rdfs:comment 
         """Number of I129 atoms per mass  of sea water in the artic from discharges  of the nuclear fuel reprocessing plant at Ringhals of Sweden (I129se40) in atoms kg-1""" ;
-    ex:issue
-        "https://github.com/mabablue/I-ADOPT-examples-playground/issues/135" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/135" ;
     rdfs:comment 
         """Number of I129 atoms per mass  of sea water in the artic from discharges  of the nuclear fuel reprocessing plant at Ringhals of Sweden (I129se40) in atoms kg-1""" ;
     iop:hasObjectOfInterest 

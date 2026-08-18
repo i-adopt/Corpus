@@ -15,8 +15,7 @@
         "Mean sea level pressure" ;
     rdfs:comment 
         """Mean sea level pressure expressed in Pa""" ;
-    ex:issue
-        "https://github.com/mabablue/I-ADOPT-examples-playground/issues/115" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/115" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q7391292> ;
     iop:hasContextObject 

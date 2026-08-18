@@ -15,8 +15,7 @@
         "Concentration of dissolved organic carbon in water" ;
     rdfs:comment 
         """Mass concentration of dissolved organic carbon in water""" ;
-    ex:issue 
-        "https://github.com/mabablue/I-ADOPT-examples-playground/issues/119" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/119" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 

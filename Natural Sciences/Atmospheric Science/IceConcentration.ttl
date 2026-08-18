@@ -15,8 +15,7 @@ ex:IceWater
         "Ice water content in atmosphere" ;
     rdfs:comment 
         """mass concentration of ice in atmosphere measured in g/m3""" ;
-    ex:issue
-        "https://github.com/mabablue/I-ADOPT-examples-playground/issues/100" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/100" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 

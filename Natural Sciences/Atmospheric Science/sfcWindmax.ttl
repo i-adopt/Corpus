@@ -15,8 +15,7 @@
         "Daily Maximum Near-Surface Wind Speed of Gust" ;
     rdfs:comment 
         """Daily Maximum Near-Surface Wind Speed of Gust, measured in m s⁻¹""" ;
-    ex:issue
-        "https://github.com/mabablue/I-ADOPT-examples-playground/issues/136" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/136" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q8094> ;
     iop:hasStatisticalModifier 

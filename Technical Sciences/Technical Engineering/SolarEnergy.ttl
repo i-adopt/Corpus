@@ -15,8 +15,7 @@ ex:SolarEnergy
         "Solar energy production of building per month" ;
     rdfs:comment 
         """Solar energy production of building in kWh""" ;
-    ex:issue
-        "https://github.com/mabablue/I-ADOPT-examples-playground/issues/131" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/131" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q217941> ;
     iop:hasContextObject 

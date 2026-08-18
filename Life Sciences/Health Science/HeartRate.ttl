@@ -15,8 +15,7 @@ ex:heartrate
         "BPM Mean heart rate" ;
     rdfs:comment 
         """SJC: property changed to hearbeat; add normalization 'per minute'""" ;
-    ex:issue
-        "https://github.com/mabablue/I-ADOPT-examples-playground/issues/105" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/105" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q1072> ;
     iop:hasMatrix 

@@ -15,6 +15,7 @@ ex:slvar
         "solubility of naphthalene in water at room temperature" ;
     rdfs:comment 
         """solubility measurement of napathalene in deionized water at room temperature by monitoring absorption at 279 nm, measured in mg/L""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/84" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 

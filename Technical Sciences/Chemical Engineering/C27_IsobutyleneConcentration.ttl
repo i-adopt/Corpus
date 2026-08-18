@@ -15,8 +15,7 @@ ex:C27
         "Mass concentration of isobutylene in chloroform" ;
     rdfs:comment 
         """Mass concentration of isobutylene in chloroform, measured in g/l.""" ;
-    ex:issue
-        "https://github.com/mabablue/I-ADOPT-examples-playground/issues/33" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/33" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 

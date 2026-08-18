@@ -15,8 +15,7 @@ ex:C26
         "Sheet resistance of layer of gold" ;
     rdfs:comment 
         """The sheet resistance of a 5-nanometer-thick layer of gold.""" ;
-    ex:issue
-        "https://github.com/mabablue/I-ADOPT-examples-playground/issues/32" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/32" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q897> ;
     iop:hasProperty 

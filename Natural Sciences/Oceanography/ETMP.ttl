@@ -21,11 +21,11 @@
     iop:hasStatisticalModifier 
         <https://www.wikidata.org/entity/Q159375> ;
     iop:hasProperty 
-        _:b0 ;
+        <https://www.wikidata.org/entity/Q240105> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "reference: relative to instrument" ;
-             iop:constrains _:b0 ;
+             iop:constrains <https://www.wikidata.org/entity/Q240105> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "temporal extent: over the temporal coverage period" ;
@@ -48,7 +48,7 @@
     rdfs:label 
         "standard deviation" .
 
-_:b0
+<https://www.wikidata.org/entity/Q240105>
     a 
         iop:Property ;
     rdfs:label 

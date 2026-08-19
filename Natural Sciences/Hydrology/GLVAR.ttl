@@ -19,18 +19,18 @@ ex:glvar
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q589446> ;
+        <https://qudt.org/vocab/quantitykind/AmountOfSubstancePerMass> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "condition: at local air conditions" ;
-             iop:constrains <https://www.wikidata.org/entity/Q589446> ;
+             iop:constrains <https://qudt.org/vocab/quantitykind/AmountOfSubstancePerMass> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "origin: air" ;
+             rdfs:label "source: air" ;
              iop:constrains <https://www.wikidata.org/entity/Q5203615> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "quality: purity 99.82 (w/w)" ;
+             rdfs:label "resistivity: 10.2 MΩ cm" ;
              iop:constrains <https://www.wikidata.org/entity/Q283> ;
         ] .
 
@@ -43,11 +43,11 @@ _:b0
     iop:hasNumerator 
         <https://www.wikidata.org/entity/Q5203615> .
 
-<https://www.wikidata.org/entity/Q589446>
+<https://qudt.org/vocab/quantitykind/AmountOfSubstancePerMass>
     a 
         iop:Property ;
     rdfs:label 
-        "mass concentration" .
+        "amount of substance per mass" .
 
 <https://www.wikidata.org/entity/Q283>
     a 

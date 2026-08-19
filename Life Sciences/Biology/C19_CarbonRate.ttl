@@ -13,16 +13,16 @@ ex:C19
     rdfs:comment 
         """Weight specific-ingestion Carbon rate at 15 °C. The amount of carbon consumed by an organism at non-limiting concentration of food relative to the individual dry weight measured at 15°C. It is expressed as μg C mg DW−1 h−1""" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/25" ;
-    iop:hasObjectOfInterest 
+   iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasMatrix 
         _:b1 ;
     iop:hasProperty 
-        <hhttps://www.wikidata.org/entity/Q3265048> ;
+        _:b2 ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "at 15°C temperature" ;
-             iop:constrains <hhttps://www.wikidata.org/entity/Q3265048> ;
+             rdfs:label "condition: at 15°C temperature" ;
+             iop:constrains _:b2 ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "condition: at non-limiting conditions" ;
@@ -30,7 +30,11 @@ ex:C19
         ] ,
         [ a iop:Constraint ;
              rdfs:label "state: dry" ;
-             iop:constrains <https://www.wikidata.org/entity/Q795052> ;
+             iop:constrains <https://www.wikidata.org/entity/Q170494> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "process: ingestion" ;
+             iop:constrains <https://www.wikidata.org/entity/Q623> ;
         ] .
 
 _:b0
@@ -40,7 +44,7 @@ _:b0
     iop:hasNumerator 
         <https://www.wikidata.org/entity/Q623> ;
     iop:hasDenominator 
-        <https://www.wikidata.org/entity/Q795052> .
+        <https://www.wikidata.org/entity/Q170494> .
 
 _:b1
     a 
@@ -51,11 +55,11 @@ _:b1
     iop:hasTarget 
         <https://www.wikidata.org/entity/Q7239> .
 
-<hhttps://www.wikidata.org/entity/Q3265048>
+_:b2
     a 
         iop:Property ;
     rdfs:label 
-        "mass flow rate" .
+        "mass fraction rate" .
 
 <https://www.wikidata.org/entity/Q623>
     a 
@@ -63,11 +67,11 @@ _:b1
     rdfs:label 
         "Carbon" .
 
-<https://www.wikidata.org/entity/Q795052>
+<https://www.wikidata.org/entity/Q170494>
     a 
         iop:Entity ;
     rdfs:label 
-        "individual" .
+        "body" .
 
 <https://www.wikidata.org/entity/Q2095>
     a 

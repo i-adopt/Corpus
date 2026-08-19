@@ -12,7 +12,7 @@ ex:C23
     a 
         iop:Variable ;
     rdfs:label 
-        "Cellular dose in vitro of nanomaterials (entity / cell)" ;
+        "Cellular dose in vitro of nanomaterials (particle / cell)" ;
     rdfs:comment 
         """Count of nanomaterial particles internalised into the cell over the duration of the experiment, entity per cell""" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/30" ;

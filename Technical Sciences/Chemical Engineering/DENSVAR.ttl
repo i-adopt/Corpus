@@ -26,7 +26,7 @@ ex:densvar
              iop:constrains <https://qudt.org/vocab/quantitykind/MassDensity> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "size: 10.00 mL sample" ;
+             rdfs:label "volume: 10.00 mL" ;
              iop:constrains <https://www.wikidata.org/entity/Q2270> ;
         ] ,
         [ a iop:Constraint ;

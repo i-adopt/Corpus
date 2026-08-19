@@ -16,13 +16,13 @@ ex:glvar
     rdfs:comment 
         """solubility of molecular oxygen from air in water with MilliQ (10.2MOhm) purity at local air conditions""" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/82" ;
-    iop:hasObjectOfInterest 
+   iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
         <https://qudt.org/vocab/quantitykind/AmountOfSubstancePerMass> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "condition: at local air conditions" ;
+             rdfs:label "condition: at local atmospheric pressure" ;
              iop:constrains <https://qudt.org/vocab/quantitykind/AmountOfSubstancePerMass> ;
         ] ,
         [ a iop:Constraint ;
@@ -32,6 +32,10 @@ ex:glvar
         [ a iop:Constraint ;
              rdfs:label "resistivity: 10.2 MΩ cm" ;
              iop:constrains <https://www.wikidata.org/entity/Q283> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "condition: at local temperature" ;
+             iop:constrains <https://qudt.org/vocab/quantitykind/AmountOfSubstancePerMass> ;
         ] .
 
 _:b0

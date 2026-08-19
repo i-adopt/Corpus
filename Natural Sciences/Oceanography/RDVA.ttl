@@ -19,11 +19,11 @@ ex:RadVelErrHF
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q184395> ;
     iop:hasProperty 
-        _:b0 ;
+        <https://www.wikidata.org/entity/Q240105> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "reference: relative to instrument" ;
-             iop:constrains _:b0 ;
+             iop:constrains <https://www.wikidata.org/entity/Q240105> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "part: surface level" ;
@@ -36,7 +36,7 @@ ex:RadVelErrHF
     rdfs:label 
         "sea water " .
 
-_:b0
+<https://www.wikidata.org/entity/Q240105>
     a 
         iop:Property ;
     rdfs:label 

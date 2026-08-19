@@ -26,7 +26,7 @@ ex:mpvar
              iop:constrains <https://qudt.org/vocab/quantitykind/ThermodynamicTemperature> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "quality: purity of 99.12 (w/w)" ;
+             rdfs:label "purity: of 99.12 (w/w)" ;
              iop:constrains <https://www.wikidata.org/entity/Q179724> ;
         ] ,
         [ a iop:Constraint ;

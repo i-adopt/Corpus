@@ -21,7 +21,7 @@
     iop:hasMatrix 
         _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q3295893> ;
+        <https://qudt.org/vocab/quantitykind/MassFluxDensity> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "condition: not soaking into the ground" ;
@@ -47,11 +47,11 @@ _:b0
     iop:hasSource 
         <https://www.wikidata.org/entity/Q36133> .
 
-<https://www.wikidata.org/entity/Q3295893>
+<https://qudt.org/vocab/quantitykind/MassFluxDensity>
     a 
         iop:Property ;
     rdfs:label 
-        "mass flow" .
+        "mass flux density" .
 
 <https://www.wikidata.org/entity/Q15324>
     a 

@@ -11,10 +11,8 @@ ex:C3
         iop:Variable ;
     rdfs:label 
         "Cloud cover" ;
-    skos:definition 
-        """The amount of sky estimated to be covered by all cloud types.""" ;
     rdfs:comment
-        """sky; cloud; amount covered -> area fraction; ADD: area per area""" ;
+        """The amount of sky estimated to be covered by all cloud types.""" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/9" ;
     iop:hasObjectOfInterest 
         _:b0 ;

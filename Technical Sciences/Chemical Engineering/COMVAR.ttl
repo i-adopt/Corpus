@@ -26,7 +26,7 @@ ex:comvar
         <https://qudt.org/vocab/quantitykind/MolarEnergy> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "quality: purity 99.98(w/w)" ;
+             rdfs:label "purity: 99.98(w/w)" ;
              iop:constrains <https://www.wikidata.org/entity/Q76933> ;
         ] ,
         [ a iop:Constraint ;

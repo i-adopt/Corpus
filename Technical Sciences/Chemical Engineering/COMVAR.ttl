@@ -30,7 +30,7 @@ ex:comvar
              iop:constrains <https://www.wikidata.org/entity/Q76933> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "condition: at atmospheric pressure" ;
+             rdfs:label "condition: at 1 atm pressure" ;
              iop:constrains <https://www.wikidata.org/entity/Q133235> ;
         ] ,
         [ a iop:Constraint ;

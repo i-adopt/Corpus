@@ -18,7 +18,7 @@ ex:FractionFloodedBuilding
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/90" ;
     iop:hasObjectOfInterest 
         _:b0 ;
-    iop:hasContextObject 
+    iop:hasMatrix
         <https://www.wikidata.org/entity/Q702492> ;
     iop:hasProperty 
         uom:AreaFraction ;

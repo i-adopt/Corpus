@@ -30,11 +30,11 @@ ex:llvar
              iop:constrains <https://www.wikidata.org/entity/Q2270> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "quality: dionized" ;
+             rdfs:label "resistivity: > 1 MOhm cm" ;
              iop:constrains <https://www.wikidata.org/entity/Q283> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "quality: purity 99.82 (w/w)" ;
+             rdfs:label "purity: 99.82 (w/w)" ;
              iop:constrains <https://www.wikidata.org/entity/Q2270> ;
         ] .
 

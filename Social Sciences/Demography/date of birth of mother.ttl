@@ -15,9 +15,9 @@
         "Date of birth of mother" ;
     rdfs:comment 
         """date of birth of mother""" ;
-    iop:hasObjectOfInterest 
-        <https://www.wikidata.org/entity/Q14819852> ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/113" ;
+    iop:hasObjectOfInterest
+        <https://www.wikidata.org/entity/Q14819852> ;
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q215627> ;
     iop:hasProperty 

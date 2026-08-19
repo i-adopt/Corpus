@@ -10,10 +10,10 @@ ex:phvar
         iop:Variable ;
     rdfs:label 
         "pH measurement of a sample of apple juice" ;
-    skos:definition 
+    rdfs:comment 
         """pH of a sample of apple juice using a solid-state pH electrode""" ;
-   ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/87" ;
-   iop:hasObjectOfInterest 
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/87" ;
+    iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q40936> ;
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q618355> ;

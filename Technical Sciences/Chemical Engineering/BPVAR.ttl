@@ -30,7 +30,7 @@ ex:bpvar
              iop:constrains <https://qudt.org/vocab/quantitykind/ThermodynamicTemperature> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "quality: purity 99.07 (w/w)" ;
+             rdfs:label "purity: 99.07 (w/w)" ;
              iop:constrains <https://www.wikidata.org/entity/Q2270> ;
         ] .
 

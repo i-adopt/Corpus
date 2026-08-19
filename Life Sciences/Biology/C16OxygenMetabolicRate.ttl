@@ -24,7 +24,7 @@ ex:C16
         <https://qudt.org/vocab/quantitykind/Mass> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "normalization: one hour" ;
+             rdfs:label "normalization: per hour" ;
              iop:constrains <https://qudt.org/vocab/quantitykind/Mass> ;
         ] ,
         [ a iop:Constraint ;

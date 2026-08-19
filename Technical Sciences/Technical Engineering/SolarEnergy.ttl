@@ -16,22 +16,16 @@ ex:SolarEnergy
     rdfs:comment 
         """Solar energy production of building in kWh""" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/131" ;
-    iop:hasObjectOfInterest 
+   iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q217941> ;
     iop:hasContextObject 
         <https://www.wikidata.org/entity/Q41176> ;
-    iop:hasStatisticalModifier 
-        _:b0 ;
     iop:hasProperty 
         <https://qudt.org/vocab/quantitykind/Energy> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "normalization: month" ;
              iop:constrains <https://qudt.org/vocab/quantitykind/Energy> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "temporal extent: one month" ;
-             iop:constrains _:b0 ;
         ] .
 
 <https://www.wikidata.org/entity/Q217941>
@@ -39,12 +33,6 @@ ex:SolarEnergy
         iop:Entity ;
     rdfs:label 
         "solar panel" .
-
-_:b0
-    a 
-        iop:StatisticalModifier ;
-    rdfs:label 
-        "integral" .
 
 <https://qudt.org/vocab/quantitykind/Energy>
     a 

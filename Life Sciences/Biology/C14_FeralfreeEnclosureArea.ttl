@@ -18,7 +18,7 @@ ex:C14
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q858177> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q11500> ;
+        <https://qudt.org/vocab/quantitykind/Area> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "condition: free of feral" ;
@@ -31,7 +31,7 @@ ex:C14
     rdfs:label 
         "enclosure" .
 
-<https://www.wikidata.org/entity/Q11500>
+<https://qudt.org/vocab/quantitykind/Area>
     a 
         iop:Property ;
     rdfs:label 

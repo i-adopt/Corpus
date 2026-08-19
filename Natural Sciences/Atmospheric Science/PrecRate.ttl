@@ -15,11 +15,11 @@
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q283> ;
     iop:hasMatrix 
-        ex:Matrix ;
+        _:b0 ;
     iop:hasStatisticalModifier 
         <https://www.wikidata.org/entity/Q10578722> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q3265048> ;
+        <https://qudt.org/vocab/quantitykind/MassFluxDensity> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "reporting frequency: daily" ;
@@ -30,7 +30,7 @@
              iop:constrains <https://www.wikidata.org/entity/Q10578722> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "origin: precipitation" ;
+             rdfs:label "process: precipitation" ;
              iop:constrains <https://www.wikidata.org/entity/Q283> ;
         ] .
 
@@ -40,12 +40,10 @@
     rdfs:label 
         "water" .
 
-ex:Matrix
+_:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
-    rdfs:label 
-        "vegetation-soil system" ;
     iop:hasTarget 
         <https://www.wikidata.org/entity/Q36133> ;
     iop:hasSource 
@@ -57,11 +55,11 @@ ex:Matrix
     rdfs:label 
         "maximum" .
 
-<https://www.wikidata.org/entity/Q3265048>
+<https://qudt.org/vocab/quantitykind/MassFluxDensity>
     a 
         iop:Property ;
     rdfs:label 
-        "mass flux" .
+        "mass flux density" .
 
 <https://www.wikidata.org/entity/Q36133>
     a 

@@ -30,7 +30,7 @@ _:b0
     a 
         iop:Entity ;
     rdfs:label 
-        "Radial velocity of sea water" .
+        "radial velocity of sea water" .
 
 <http://qudt.org/vocab/quantitykind/PlaneAngle>
     a 

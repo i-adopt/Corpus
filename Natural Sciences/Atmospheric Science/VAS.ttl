@@ -21,15 +21,15 @@
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q8104> ;
     iop:hasProperty 
-        <https://qudt.org/vocab/quantitykind/Speed> ;
+        <https://qudt.org/vocab/quantitykind/Velocity> ;
     iop:hasConstraint 
-        [ a iop:Constraint ;
-             rdfs:label "direction: northward" ;
-             iop:constrains <https://www.wikidata.org/entity/Q8094> ;
-        ] ,
         [ a iop:Constraint ;
              rdfs:label "part: near surface" ;
              iop:constrains <https://www.wikidata.org/entity/Q8104> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "direction: northward" ;
+             iop:constrains <https://qudt.org/vocab/quantitykind/Velocity> ;
         ] .
 
 <https://www.wikidata.org/entity/Q8094>
@@ -44,8 +44,8 @@
     rdfs:label 
         "atmosphere" .
 
-<https://qudt.org/vocab/quantitykind/Speed>
+<https://qudt.org/vocab/quantitykind/Velocity>
     a 
         iop:Property ;
     rdfs:label 
-        "speed" .
+        "velocity" .

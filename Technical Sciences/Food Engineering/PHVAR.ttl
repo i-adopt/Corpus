@@ -12,13 +12,18 @@ ex:phvar
         "pH measurement of a sample of apple juice" ;
     skos:definition 
         """pH of a sample of apple juice using a solid-state pH electrode""" ;
-    rdfs:comment 
-        """pH; apple juice; ADD: hydronium ion activity""" ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/87" ;
-    iop:hasObjectOfInterest 
+   iop:hasObjectOfInterest 
+        < https://www.wikidata.org/entity/Q40936> ;
+    iop:hasMatrix 
         <https://www.wikidata.org/entity/Q618355> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q40936> .
+        <https://www.wikidata.org/entity/Q1738991> .
+
+< https://www.wikidata.org/entity/Q40936>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "pH" .
 
 <https://www.wikidata.org/entity/Q618355>
     a 
@@ -26,8 +31,8 @@ ex:phvar
     rdfs:label 
         "apple juice" .
 
-<https://www.wikidata.org/entity/Q40936>
+<https://www.wikidata.org/entity/Q1738991>
     a 
         iop:Property ;
     rdfs:label 
-        "pH" .
+        "index" .

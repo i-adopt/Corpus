@@ -16,7 +16,7 @@
     rdfs:comment 
         """Mean sea level pressure expressed in Pa""" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/115" ;
-      iop:hasObjectOfInterest 
+  iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q7391292> ;
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q8104> ;
@@ -44,4 +44,4 @@
     a 
         iop:Property ;
     rdfs:label 
-        "ambient pressure" .
+        "atmospheric pressure" .

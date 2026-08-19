@@ -16,15 +16,27 @@ ex:FloodRiskMobility
     rdfs:comment 
         """Flood risk index related to mobility and accessibility when streets around the houses are flooded""" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/98" ;
-    iop:hasObjectOfInterest 
+   iop:hasObjectOfInterest 
+        <https://www.wikidata.org/entity/Q104493> ;
+    iop:hasMatrix 
         <https://www.wikidata.org/entity/Q702492> ;
     iop:hasProperty 
-        _:b0 ;
+        <https://www.wikidata.org/entity/Q1738991> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "normalization: per statistical unit" ;
-             iop:constrains _:b0 ;
+             iop:constrains <https://www.wikidata.org/entity/Q1738991> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "cause: pluvial flood to mobility and accessibility of an urban area" ;
+             iop:constrains <https://www.wikidata.org/entity/Q104493> ;
         ] .
+
+<https://www.wikidata.org/entity/Q104493>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "risk" .
 
 <https://www.wikidata.org/entity/Q702492>
     a 
@@ -32,8 +44,8 @@ ex:FloodRiskMobility
     rdfs:label 
         "urban area" .
 
-_:b0
+<https://www.wikidata.org/entity/Q1738991>
     a 
         iop:Property ;
     rdfs:label 
-        "pluvial flood risk to mobility and accessibility" .
+        "index" .
